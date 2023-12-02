@@ -1,59 +1,60 @@
-import SwiftUI
-
-enum DestinationX: Hashable {
-    case detailView1
-    case detailView2
-}
-
-struct ContentView: View {
-    @State private var navigationSelection: DestinationX?
-
-    var body: some View {
-        NavigationStack {
-            Text("Main View")
-                .navigationTitle("Home")
-                .toolbar {
-                    ToolbarItemGroup(placement: .navigationBarTrailing) {
-                        // Hidden Navigation Links
-                        ForEach([DestinationX.detailView1, DestinationX.detailView2], id: \.self) { destination in
-                            NavigationLink("", tag: destination, selection: $navigationSelection) {
-                                destinationView(for: destination)
-                            }
-                        }
-
-                        // Toolbar Buttons
-                        Button("Detail 1") {
-                            navigationSelection = .detailView1
-                        }
-                        Button("Detail 2") {
-                            navigationSelection = .detailView2
-                        }
-                    }
-                }
-        }
-    }
-
-    @ViewBuilder
-    private func destinationView(for destination: DestinationX) -> some View {
-        switch destination {
-        case .detailView1:
-            DetailView1()
-        case .detailView2:
-            DetailView2()
-        }
-    }
-}
-
-struct DetailView1: View {
-    var body: some View {
-        Text("This is Detail View 1")
-            .navigationTitle("Detail 1")
-    }
-}
-
-struct DetailView2: View {
-    var body: some View {
-        Text("This is Detail View 2")
-            .navigationTitle("Detail 2")
-    }
-}
+//import SwiftUI
+//
+//struct ChessboardView: View {
+//    // This represents the state of the board, for example, using 2D array
+//    let board: [[String]] = [
+//        ["R", "N", "B", "Q", "K", "B", "N", "R"],
+//        ["P", "P", "P", "P", "P", "P", "P", "P"],
+//        ["", "", "", "", "", "", "", ""],
+//        ["", "", "", "", "", "", "", ""],
+//        ["", "", "", "", "", "", "", ""],
+//        ["", "", "", "", "", "", "", ""],
+//        ["r", "n", "b", "q", "k", "b", "n", "r"],
+//        ["p", "p", "p", "p", "p", "p", "p", "p"]
+//    ]
+//
+//    var body: some View {
+//        VStack(spacing: 0) {
+//            ForEach(0..<8, id: \.self) { row in
+//                HStack(spacing: 0) {
+//                    ForEach(0..<8, id: \.self) { column in
+//                        ChessSquareView(piece: board[row][column], isLightSquare: (row + column) % 2 == 0)
+//                    }
+//                }
+//            }
+//        }
+//        .border(Color.black, width: 2)
+//    }
+//}
+//
+//struct ChessSquareView: View {
+//    var piece: String
+//    var isLightSquare: Bool
+//
+//    var body: some View {
+//        ZStack {
+//            Rectangle()
+//                .fill(isLightSquare ? Color.white : Color.gray)
+//            Image(systemName: iconName(for: piece))
+//                .resizable()
+//                .scaledToFit()
+//                .frame(width: 40, height: 40)
+//        }
+//    }
+//
+//    // Function to get the correct icon name based on the piece
+//    func iconName(for piece: String) -> String {
+//        switch piece {
+//        case "R": return "Rook_White"    // replace with your image names
+//        case "N": return "Knight_White"
+//        case "B": return "Bishop_White"
+//        default: return ""
+//        }
+//    }
+//}
+//
+//struct ChessboardView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ChessboardView()
+//    }
+//}
