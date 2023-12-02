@@ -32,6 +32,19 @@ struct MainContentView: View {
             NavigationView {
                 // Z stack: components layers.
                 ZStack {
+                    // Hidden Navigation Links
+                    ForEach([
+                        DestinationOptions.GameView,
+                        DestinationOptions.SetupView,
+                        DestinationOptions.HelpView,
+                        DestinationOptions.AboutView
+                    ], id: \.self) {
+                        destination in
+                        NavigationLink("", tag: destination,
+                                       selection: $navigationSelection) {
+                            DestinationoptionsView(for: destination)
+                        } // selection: $navigationSelection)
+                    } // id: \.self)
                     // Background color
                     Color.teal
                         .ignoresSafeArea()
@@ -48,22 +61,6 @@ struct MainContentView: View {
                 } // Navigation view
             } // View
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    // Hidden Navigation Links
-                    ForEach([
-                        DestinationOptions.GameView,
-                        DestinationOptions.SetupView,
-                        DestinationOptions.HelpView,
-                        DestinationOptions.AboutView
-                    ], id: \.self) {
-                        destination in
-                        NavigationLink("", tag: destination,
-                                       selection: $navigationSelection) {
-                            DestinationoptionsView(for: destination)
-                        } // selection: $navigationSelection)
-                    } // id: \.self)
-                } // ToolbarItem
-                
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: {
                         navigationSelection = .GameView
