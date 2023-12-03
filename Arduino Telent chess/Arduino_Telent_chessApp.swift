@@ -15,8 +15,6 @@ struct Arduino_Telent_chessApp: App {
         WindowGroup {
             MainContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
-//            ContentView()
-//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

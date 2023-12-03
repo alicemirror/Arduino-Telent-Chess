@@ -16,6 +16,9 @@
 		D90A43EA2B0961C500CFEFA6 /* Arduino_Telent_chessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90A43E92B0961C500CFEFA6 /* Arduino_Telent_chessTests.swift */; };
 		D90A43F42B0961C500CFEFA6 /* Arduino_Telent_chessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90A43F32B0961C500CFEFA6 /* Arduino_Telent_chessUITests.swift */; };
 		D90A43F62B0961C500CFEFA6 /* Arduino_Telent_chessUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90A43F52B0961C500CFEFA6 /* Arduino_Telent_chessUITestsLaunchTests.swift */; };
+		D9331D8D2B1D33A0002634DB /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9331D8C2B1D33A0002634DB /* GlobalFunctions.swift */; };
+		D9331D8F2B1D33EE002634DB /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9331D8E2B1D33EE002634DB /* Globals.swift */; };
+		D9331D912B1D3466002634DB /* GameFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9331D902B1D3466002634DB /* GameFunctions.swift */; };
 		D96178252B1A871D00120EAE /* VrersionBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96178242B1A871D00120EAE /* VrersionBuild.swift */; };
 		D96A69452B0AAD7F00AB7F2E /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A69442B0AAD7F00AB7F2E /* Buttons.swift */; };
 		D9C6287C2B17F3B300E1AA60 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C6287B2B17F3B300E1AA60 /* GameView.swift */; };
@@ -56,6 +59,9 @@
 		D90A43EF2B0961C500CFEFA6 /* Arduino Telent chessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arduino Telent chessUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90A43F32B0961C500CFEFA6 /* Arduino_Telent_chessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arduino_Telent_chessUITests.swift; sourceTree = "<group>"; };
 		D90A43F52B0961C500CFEFA6 /* Arduino_Telent_chessUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arduino_Telent_chessUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D9331D8C2B1D33A0002634DB /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		D9331D8E2B1D33EE002634DB /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		D9331D902B1D3466002634DB /* GameFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFunctions.swift; sourceTree = "<group>"; };
 		D96178242B1A871D00120EAE /* VrersionBuild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VrersionBuild.swift; sourceTree = "<group>"; };
 		D96A69442B0AAD7F00AB7F2E /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		D9C6287B2B17F3B300E1AA60 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -158,6 +164,9 @@
 				D96A69442B0AAD7F00AB7F2E /* Buttons.swift */,
 				D9C6287D2B192E2400E1AA60 /* TitlesView.swift */,
 				D96178242B1A871D00120EAE /* VrersionBuild.swift */,
+				D9331D8C2B1D33A0002634DB /* GlobalFunctions.swift */,
+				D9331D8E2B1D33EE002634DB /* Globals.swift */,
+				D9331D902B1D3466002634DB /* GameFunctions.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -308,6 +317,7 @@
 				D90A43DD2B0961C500CFEFA6 /* Persistence.swift in Sources */,
 				D90A43E02B0961C500CFEFA6 /* Arduino_Telent_chess.xcdatamodeld in Sources */,
 				D9C628852B19344B00E1AA60 /* AboutView.swift in Sources */,
+				D9331D912B1D3466002634DB /* GameFunctions.swift in Sources */,
 				D9C628832B19341200E1AA60 /* HelpView.swift in Sources */,
 				D96178252B1A871D00120EAE /* VrersionBuild.swift in Sources */,
 				D90A43D62B0961C400CFEFA6 /* MainContentView.swift in Sources */,
@@ -315,6 +325,8 @@
 				D9C628812B1933D300E1AA60 /* SetupView.swift in Sources */,
 				D90A43D42B0961C400CFEFA6 /* Arduino_Telent_chessApp.swift in Sources */,
 				D9C628872B1943E400E1AA60 /* test.swift in Sources */,
+				D9331D8F2B1D33EE002634DB /* Globals.swift in Sources */,
+				D9331D8D2B1D33A0002634DB /* GlobalFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
