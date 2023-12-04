@@ -22,15 +22,15 @@ let boardColors = [
 
 // 2D array showing the initial state of the board pieces.
 // Uppercase are white, lowercase are black.
-let boardPiecesOnStart: [[String]] = [
-    ["R", "N", "B", "Q", "K", "B", "N", "R"],
-    ["P", "P", "P", "P", "P", "P", "P", "P"],
-    ["", "", "", "", "", "", "", ""],
-    ["", "", "", "", "", "", "", ""],
-    ["", "", "", "", "", "", "", ""],
-    ["", "", "", "", "", "", "", ""],
-    ["r", "n", "b", "q", "k", "b", "n", "r"],
-    ["p", "p", "p", "p", "p", "p", "p", "p"]
+let gamePiexesPosition: [String] = [
+    "R", "N", "B", "Q", "K", "B", "N", "R",
+    "P", "P", "P", "P", "P", "P", "P", "P",
+    "", "", "", "", "", "", "", "",
+    "", "", "", "", "", "", "", "",
+    "", "", "", "", "", "", "", "",
+    "", "", "", "", "", "", "", "",
+    "r", "n", "b", "q", "k", "b", "n", "r",
+    "p", "p", "p", "p", "p", "p", "p", "p"
 ]
 
 // Decide alternatively the color of every square tile of the board.
@@ -44,3 +44,37 @@ var baseColorArray: Int = 6
 // The current position in the 8x8 array
 var currentPosition: Int = 0
 
+// Spacing between squares, constant value according to
+// the desired design. This value maybe 0 = no spacing
+let spacingDesired: CGFloat = 1
+
+// These are our grid items we'll use in the 'LazyHGrid' to draw the
+// board squares.
+// Every item of the array represent one of eight horizontal
+// squares.
+let rowsSquares = [
+    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center)
+]
+
+
+// These are our grid items we'll use in the 'LazyHGrid' to draw the
+// board squares.
+// Every item of the array represent one of eight horizontal
+// squares.
+let rowsPieces = [
+    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center)
+]

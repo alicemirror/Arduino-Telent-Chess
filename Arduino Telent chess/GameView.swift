@@ -8,20 +8,6 @@
 import SwiftUI
 import CoreData
 
-// Design a generic square of the chessboard
-// The squareSize depends on the screen geometry calculate in the
-// chessboard view.
-// Color is provided by the caller, defined by two alternate.
-struct BoardSquare: View {
-    var squareBoardSize: CGFloat
-
-    var body: some View {
-        RoundedRectangle(cornerRadius: 5)
-          .frame(width: squareBoardSize, height: squareBoardSize, alignment: .center)
-          .foregroundColor(boardColors[isLightSquare()])
-        } // body view
-} // BoardSquaree
-
 // The full gameboard view. Over the gameboard, the button pieces
 // should be ckickable to set the position.
 struct GameView: View {
@@ -50,56 +36,29 @@ struct GameView: View {
                     // Single square size based on the smaller side of the screen
                     let squareSize = Double(size / 8.5)
                     
-                    // Spacing between squares, constant value according to
-                    // the desired design. This value maybe 0 = no spacing
-                    let spacingDesired: CGFloat = 1
-
-                    // These are our grid items we'll use in the 'LazyHGrid'
-                    // Every item of the array represent one of eight horizontal
-                    // squares.
-                    let rows = [
-                        GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
-                        GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
-                        GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
-                        GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
-                        GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
-                        GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
-                        GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
-                        GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center)
-                    ]
-                
                     // We then use the 'spacingDesired' in the grid
-                    LazyHGrid(rows: rows, spacing: spacingDesired, pinnedViews: [], content: {
+                    LazyHGrid(rows: rowsSquares, spacing: spacingDesired, pinnedViews: [], content: {
                         ForEach(0 ..< 64) { boardIndex in
+                            // Draw the board square
                             BoardSquare(squareBoardSize: squareSize)
                         } // Loop on all the boards
                     }) // LazyHGrid
                     .position(CGPoint(x: geometry.size.width / 2,
                                       y: geometry.size.height / 2) )
+                    LazyHGrid(rows: rowsSquares, spacing: spacingDesired, pinnedViews: [], content: {
+                        ForEach(0 ..< 64) { boardIndex in
+                            // Draw the piece image - if any - over the square
+                            GamePiecePosition(pieceBoardSize: squareSize, piece:         gamePiexesPosition[boardIndex] )
+                        } // Loop on all the boards
+                    }) // LazyHGrid
+                    .position(CGPoint(x: geometry.size.width / 2,
+                                      y: geometry.size.height / 2) )
                 } // GeometryReader
+
             } // ZStack
         } // Navigation view
     } // View
 } // Game content view
-
-//// Draw the 8x8 chess square
-//struct ChessSquareView: View {
-//    var piece: String
-//    var isLightSquare: Bool
-//    var frameSize: CGFloat
-//
-//    var body: some View {
-//        ZStack {
-//            Rectangle()
-//                .fill(isLightSquare ? Color.white : Color.gray)
-////            Image(systemName: iconName(for: piece))
-////                .resizable()
-////                .scaledToFit()
-////                .frame(width: frameSize, height: frameSize)
-//        } // ZStack
-//    } // body
-//
-//} // ChessSquareView
 
 #Preview {
     GameView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
