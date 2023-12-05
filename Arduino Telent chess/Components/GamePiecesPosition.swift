@@ -19,6 +19,6 @@ struct GamePiecePosition: View {
         Image(iconName(for: piece))
             .resizable()
             .scaledToFit()
-            .frame(width: squareSize, height: squareSize)
+            .frame(width: pieceBoardSize, height: pieceBoardSize)
         } // body view
 } // BoardSquaree

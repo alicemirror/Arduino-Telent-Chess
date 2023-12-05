@@ -31,13 +31,9 @@ struct GameView: View {
                 // Get the screen geometry to calculate the single square size and the 8x8
                 // chessboard size
                 GeometryReader { geometry in
-                    // Size of the smaller side of the screen
-                    let size = min(geometry.size.width, geometry.size.height)
-                    // Single square size based on the smaller side of the screen
-                    let squareSize = Double(size / 8.5)
-                    
-                    // We then use the 'spacingDesired' in the grid
-                    LazyHGrid(rows: rowsSquares, spacing: spacingDesired, pinnedViews: [], content: {
+                    // We use the 'spacingDesired' in the grid
+                    // to show the boardgame tiles.
+                    LazyHGrid(rows: rowsSquares, spacing: spacingGameBoardSquares, pinnedViews: [], content: {
                         ForEach(0 ..< 64) { boardIndex in
                             // Draw the board square
                             BoardSquare(squareBoardSize: squareSize)
@@ -45,10 +41,12 @@ struct GameView: View {
                     }) // LazyHGrid
                     .position(CGPoint(x: geometry.size.width / 2,
                                       y: geometry.size.height / 2) )
-                    LazyHGrid(rows: rowsSquares, spacing: spacingDesired, pinnedViews: [], content: {
+                    
+                    // Position the pieces (game start)
+                    LazyHGrid(rows: rowsPieces, spacing: spacingGameBoardSquares, pinnedViews: [], content: {
                         ForEach(0 ..< 64) { boardIndex in
                             // Draw the piece image - if any - over the square
-                            GamePiecePosition(pieceBoardSize: squareSize, piece:         gamePiexesPosition[boardIndex] )
+                            GamePiecePosition(pieceBoardSize: pieceSize, piece:         gamePiecesPosition[boardIndex] )
                         } // Loop on all the boards
                     }) // LazyHGrid
                     .position(CGPoint(x: geometry.size.width / 2,

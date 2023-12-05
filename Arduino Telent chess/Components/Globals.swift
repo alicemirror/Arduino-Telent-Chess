@@ -22,15 +22,15 @@ let boardColors = [
 
 // 2D array showing the initial state of the board pieces.
 // Uppercase are white, lowercase are black.
-let gamePiexesPosition: [String] = [
-    "R", "N", "B", "Q", "K", "B", "N", "R",
-    "P", "P", "P", "P", "P", "P", "P", "P",
-    "", "", "", "", "", "", "", "",
-    "", "", "", "", "", "", "", "",
-    "", "", "", "", "", "", "", "",
-    "", "", "", "", "", "", "", "",
-    "r", "n", "b", "q", "k", "b", "n", "r",
-    "p", "p", "p", "p", "p", "p", "p", "p"
+let gamePiecesPosition: [String] = [
+    "r", "p", "", "", "", "", "P", "R",
+    "n", "p", "", "", "", "", "P", "N",
+    "b", "p", "", "", "", "", "P", "B",
+    "q", "p", "", "", "", "", "P", "Q",
+    "k", "p", "", "", "", "", "P", "K",
+    "b", "p", "", "", "", "", "P", "B",
+    "n", "p", "", "", "", "", "P", "N",
+    "r", "p", "", "", "", "", "P", "R"
 ]
 
 // Decide alternatively the color of every square tile of the board.
@@ -46,35 +46,48 @@ var currentPosition: Int = 0
 
 // Spacing between squares, constant value according to
 // the desired design. This value maybe 0 = no spacing
-let spacingDesired: CGFloat = 1
+var spacingGameBoardSquares: CGFloat = 1
+
+// Spacing between squares, constant value according to
+// the desired design. This value maybe 0 = no spacing
+let spacingPieces: CGFloat = 0.5
+
+// Size of the smaller side of the screen
+let size = min(UIScreen.main.bounds.width, UIScreen.main.bounds.height)
+
+// Single square size based on the smaller side of the screen
+let squareSize = Double(size / 8.5)
+
+// Single piece size based on the smaller side of the screen
+let pieceSize = Double(size / 8.7)
 
 // These are our grid items we'll use in the 'LazyHGrid' to draw the
 // board squares.
 // Every item of the array represent one of eight horizontal
 // squares.
 let rowsSquares = [
-    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
-    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
-    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
-    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
-    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
-    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
-    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
-    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center)
+    GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center)
 ]
 
 
 // These are our grid items we'll use in the 'LazyHGrid' to draw the
-// board squares.
+// board pieces.
 // Every item of the array represent one of eight horizontal
 // squares.
 let rowsPieces = [
-    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
-    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
-    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
-    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
-    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
-    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
-    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center),
-    GridItem(.fixed(squareSize), spacing: spacingDesired, alignment: .center)
+    GridItem(.fixed(squareSize), spacing: spacingPieces, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingPieces, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingPieces, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingPieces, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingPieces, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingPieces, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingPieces, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingPieces, alignment: .center)
 ]
