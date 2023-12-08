@@ -41,7 +41,10 @@ struct GameView: View {
                     }) // LazyHGrid
                     .position(CGPoint(x: geometry.size.width / 2,
                                       y: geometry.size.height / 2) )
-                    
+                    .onTapGesture {
+                        print("Touched")
+                    } // onTapGesture
+
                     // Position the pieces (game start)
                     LazyHGrid(rows: rowsPieces, spacing: spacingGameBoardSquares, pinnedViews: [], content: {
                         ForEach(0 ..< 64) { boardIndex in
