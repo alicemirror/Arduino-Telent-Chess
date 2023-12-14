@@ -11,7 +11,8 @@ import CoreData
 // Enumerates the secondary level options views
 // as hashable (can produce a hash integer)
 enum DestinationOptions: Hashable {
-    case GameView
+    case PlayView
+    case GamesView
     case SetupView
     case HelpView
     case AboutView
@@ -34,7 +35,8 @@ struct MainContentView: View {
                 ZStack {
                     // Hidden Navigation Links
                     ForEach([
-                        DestinationOptions.GameView,
+                        DestinationOptions.PlayView,
+                        DestinationOptions.GamesView,
                         DestinationOptions.SetupView,
                         DestinationOptions.HelpView,
                         DestinationOptions.AboutView
@@ -46,7 +48,7 @@ struct MainContentView: View {
                         } // selection: $navigationSelection)
                     } // id: \.self)
                     // Background color
-                    Color.teal
+                    appColors["background"]
                         .ignoresSafeArea()
                     // Home screen image
                     Image("HomeScreenImage")
@@ -63,10 +65,20 @@ struct MainContentView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: {
-                        navigationSelection = .GameView
+                        navigationSelection = .PlayView
                     } ) {
                         Text("Play")
-                            .foregroundColor(.white)
+                            .foregroundColor(appColors["foreground"])
+                            .font(.headline)
+                    }
+                } // ToolbarItem
+                    
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: {
+                        navigationSelection = .GamesView
+                    } ) {
+                        Text("Games")
+                            .foregroundColor(appColors["foreground"])
                             .font(.headline)
                     }
                 } // ToolbarItem
@@ -76,7 +88,7 @@ struct MainContentView: View {
                         navigationSelection = .SetupView
                     } ) {
                         Text("Setup")
-                            .foregroundColor(.white)
+                            .foregroundColor(appColors["foreground"])
                             .font(.headline)
                     }
                 } // ToolbarItem
@@ -86,7 +98,7 @@ struct MainContentView: View {
                         navigationSelection = .HelpView
                     } ) {
                         Text("Help")
-                            .foregroundColor(.white)
+                            .foregroundColor(appColors["foreground"])
                             .font(.headline)
                     }
                 } // ToolbarItem
@@ -96,7 +108,7 @@ struct MainContentView: View {
                         navigationSelection = .AboutView
                     } ) {
                         Text("About")
-                            .foregroundColor(.white)
+                            .foregroundColor(appColors["foreground"])
                             .font(.headline)
                     }
                 } // ToolbarItem
@@ -107,8 +119,10 @@ struct MainContentView: View {
     @ViewBuilder
     private func DestinationoptionsView(for destination: DestinationOptions) -> some View {
         switch destination {
-        case .GameView:
-            GameView()
+        case .PlayView:
+            PlayView()
+        case .GamesView:
+            GamesView()
         case .SetupView:
             SetupView()
         case .HelpView:

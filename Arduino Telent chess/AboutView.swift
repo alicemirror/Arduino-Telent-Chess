@@ -22,7 +22,7 @@ struct AboutView: View {
         NavigationView {
             ZStack {
                 // Background color
-                Color.teal
+                appColors["background"]
                     .ignoresSafeArea()
                 // --------------------- Page title
                 TitleView(title: "About")

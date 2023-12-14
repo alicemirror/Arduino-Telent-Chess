@@ -11,14 +11,20 @@ import Foundation
 // in respect to the position in the possible set of color couples.
 func isLightSquare() -> Int {
     // Color index
-    var idx: Int
+    var idx: Int?
+    // Get the index of the desired couple of colors array,
+    // chose two by two. The first color is for white tiles
+    // while the second is for the black tiles.
+    var baseColorArray: Int? = boardThemes["white_teal"]
+
+
 
     if isWhite {
         idx = baseColorArray
         isWhite = false
     }
     else {
-        idx = baseColorArray + 1
+        idx = baseColorArray! + 1
         isWhite = true
     }
     
@@ -42,7 +48,7 @@ func isLightSquare() -> Int {
         }
     }
     
-    return idx
+    return idx!
 } // isLightSquare
 
 // Function to get the correct icon name based on the piece

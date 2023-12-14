@@ -16,9 +16,35 @@ import CoreData
 let boardColors = [
     Color.white, Color.purple,
     Color.white, Color.brown,
-    Color.red, Color.white,
-    Color.yellow, Color.brown
+    Color.white, Color.red,
+    Color.yellow, Color.brown,
+    Color.white, Color.black,
+    Color.white, Color.teal
 ]
+
+// Board theme dictionary. The associated number is
+// the first value of the pair of colors defined in
+// the boardColors array.
+// This dictionary is used to represent the theme
+// with a string.
+let boardThemes: [String: Int] = [
+    "white_purple": 0,
+    "white_brown": 2,
+    "red_white": 4,
+    "yellow_brown": 6,
+    "white_black": 8,
+    "white_teal": 10
+    ]
+
+// Appplication colors dictionary
+let appColors: [String: Color] = [
+        "background": .teal,
+        "foreground": .white,
+        "titleText": .teal,
+        "normalText": .white,
+        "stroke": .white,
+        "selected": .gray
+    ]
 
 // 2D array showing the initial state of the board pieces.
 // Uppercase are white, lowercase are black.
@@ -35,11 +61,6 @@ let gamePiecesPosition: [String] = [
 
 // Decide alternatively the color of every square tile of the board.
 var isWhite: Bool = true
-
-// Get the index of the desired couple of colors array,
-// chose two by two. The first color is for white tiles
-// while the second is for the black tiles.
-var baseColorArray: Int = 6
 
 // The current position in the 8x8 array
 var currentPosition: Int = 0
@@ -61,9 +82,15 @@ let squareSize = Double(size / 8.5)
 // Single piece size based on the smaller side of the screen
 let pieceSize = Double(size / 8.7)
 
-// These are our grid items we'll use in the 'LazyHGrid' to draw the
+// Chessboard tiles corner radius
+let tilesCornerRadius: CGFloat = 5
+
+// Width of the stroke around the chessboard cells
+let tilesStrokeWidth: CGFloat = 4
+
+// Grid items we'll use in the 'LazyHGrid' to draw the
 // board squares.
-// Every item of the array represent one of eight horizontal
+// Every item of the array represent one column of eight vertical
 // squares.
 let rowsSquares = [
     GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center),
@@ -76,11 +103,10 @@ let rowsSquares = [
     GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center)
 ]
 
-
-// These are our grid items we'll use in the 'LazyHGrid' to draw the
+// Grid items we'll use in the 'LazyHGrid' to draw the
 // board pieces.
-// Every item of the array represent one of eight horizontal
-// squares.
+// Every item of the array represent one column of eight vertical
+// placeholders.
 let rowsPieces = [
     GridItem(.fixed(squareSize), spacing: spacingPieces, alignment: .center),
     GridItem(.fixed(squareSize), spacing: spacingPieces, alignment: .center),
@@ -90,4 +116,19 @@ let rowsPieces = [
     GridItem(.fixed(squareSize), spacing: spacingPieces, alignment: .center),
     GridItem(.fixed(squareSize), spacing: spacingPieces, alignment: .center),
     GridItem(.fixed(squareSize), spacing: spacingPieces, alignment: .center)
+]
+
+// Grid items we'll use in the 'LazyHGrid' to identify the touch
+// areas corresponding to the squares.
+// Every item of the array represent one of eight vertical
+// squares.
+let rowsTouch = [
+    GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center)
 ]

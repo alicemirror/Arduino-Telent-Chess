@@ -19,7 +19,7 @@ struct TitleView: View {
             Rectangle()
                 .position(x: geometry.size.width / 2, y: geometry.size.height / 18)
                 .frame(height: 60)
-                .foregroundColor(.white)
+                .foregroundColor(appColors["foreground"])
         } // Title background geometry
         // Page title
         GeometryReader {
@@ -28,7 +28,7 @@ struct TitleView: View {
                 .position(x: geometry.size.width / 2, y: geometry.size.height / 18)
                 .font(.custom("San Francisco (SF Pro Text)", size: 48))
                 .fontWeight(.bold)
-                .foregroundColor(.teal)
+                .foregroundColor(appColors["titleText"])
                 .lineSpacing(10)
                 .truncationMode(.tail)
                 .kerning(1.5)

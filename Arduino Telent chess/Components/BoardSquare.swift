@@ -15,7 +15,7 @@ struct BoardSquare: View {
     var squareBoardSize: CGFloat
 
     var body: some View {
-        RoundedRectangle(cornerRadius: 5)
+        RoundedRectangle(cornerRadius: tilesCornerRadius)
           .frame(width: squareBoardSize, height: squareBoardSize, alignment: .center)
           .foregroundColor(boardColors[isLightSquare()])
         } // body view

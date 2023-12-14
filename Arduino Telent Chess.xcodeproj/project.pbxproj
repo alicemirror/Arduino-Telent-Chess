@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9053A662B2B96AF00667FE3 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9053A652B2B96AF00667FE3 /* GamesView.swift */; };
 		D90A43D42B0961C400CFEFA6 /* Arduino_Telent_chessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90A43D32B0961C400CFEFA6 /* Arduino_Telent_chessApp.swift */; };
 		D90A43D62B0961C400CFEFA6 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90A43D52B0961C400CFEFA6 /* MainContentView.swift */; };
 		D90A43D82B0961C500CFEFA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90A43D72B0961C500CFEFA6 /* Assets.xcassets */; };
@@ -16,11 +17,12 @@
 		D9331D8D2B1D33A0002634DB /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9331D8C2B1D33A0002634DB /* GlobalFunctions.swift */; };
 		D9331D8F2B1D33EE002634DB /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9331D8E2B1D33EE002634DB /* Globals.swift */; };
 		D9331D912B1D3466002634DB /* GameFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9331D902B1D3466002634DB /* GameFunctions.swift */; };
-		D9331D932B1E6E40002634DB /* ChessBoardSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9331D922B1E6E40002634DB /* ChessBoardSquare.swift */; };
+		D9331D932B1E6E40002634DB /* BoardSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9331D922B1E6E40002634DB /* BoardSquare.swift */; };
 		D9331D952B1E7747002634DB /* GamePiecesPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9331D942B1E7747002634DB /* GamePiecesPosition.swift */; };
+		D93369962B2A58D1007EB862 /* BoardSquareTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93369952B2A58D1007EB862 /* BoardSquareTouch.swift */; };
 		D96178252B1A871D00120EAE /* VrersionBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96178242B1A871D00120EAE /* VrersionBuild.swift */; };
 		D96A69452B0AAD7F00AB7F2E /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A69442B0AAD7F00AB7F2E /* Buttons.swift */; };
-		D9C6287C2B17F3B300E1AA60 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C6287B2B17F3B300E1AA60 /* GameView.swift */; };
+		D9C6287C2B17F3B300E1AA60 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C6287B2B17F3B300E1AA60 /* PlayView.swift */; };
 		D9C6287E2B192E2400E1AA60 /* TitlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C6287D2B192E2400E1AA60 /* TitlesView.swift */; };
 		D9C628812B1933D300E1AA60 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C628802B1933D300E1AA60 /* SetupView.swift */; };
 		D9C628832B19341200E1AA60 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C628822B19341200E1AA60 /* HelpView.swift */; };
@@ -46,23 +48,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D90A43D02B0961C400CFEFA6 /* Arduino Telent chess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arduino Telent chess.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9053A652B2B96AF00667FE3 /* GamesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
+		D90A43D02B0961C400CFEFA6 /* Arduino Telent Chess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arduino Telent Chess.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90A43D32B0961C400CFEFA6 /* Arduino_Telent_chessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arduino_Telent_chessApp.swift; sourceTree = "<group>"; };
 		D90A43D52B0961C400CFEFA6 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 		D90A43D72B0961C500CFEFA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D90A43DA2B0961C500CFEFA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D90A43DC2B0961C500CFEFA6 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		D90A43DF2B0961C500CFEFA6 /* Arduino_Telent_chess.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Arduino_Telent_chess.xcdatamodel; sourceTree = "<group>"; };
-		D90A43E52B0961C500CFEFA6 /* Arduino Telent chessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arduino Telent chessTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D90A43EF2B0961C500CFEFA6 /* Arduino Telent chessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arduino Telent chessUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90A43E52B0961C500CFEFA6 /* Arduino Telent ChessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arduino Telent ChessTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90A43EF2B0961C500CFEFA6 /* Arduino Telent ChessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arduino Telent ChessUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9331D8C2B1D33A0002634DB /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
 		D9331D8E2B1D33EE002634DB /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		D9331D902B1D3466002634DB /* GameFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFunctions.swift; sourceTree = "<group>"; };
-		D9331D922B1E6E40002634DB /* ChessBoardSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessBoardSquare.swift; sourceTree = "<group>"; };
+		D9331D922B1E6E40002634DB /* BoardSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardSquare.swift; sourceTree = "<group>"; };
 		D9331D942B1E7747002634DB /* GamePiecesPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePiecesPosition.swift; sourceTree = "<group>"; };
+		D93369952B2A58D1007EB862 /* BoardSquareTouch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardSquareTouch.swift; sourceTree = "<group>"; };
 		D96178242B1A871D00120EAE /* VrersionBuild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VrersionBuild.swift; sourceTree = "<group>"; };
 		D96A69442B0AAD7F00AB7F2E /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
-		D9C6287B2B17F3B300E1AA60 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		D9C6287B2B17F3B300E1AA60 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
 		D9C6287D2B192E2400E1AA60 /* TitlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlesView.swift; sourceTree = "<group>"; };
 		D9C628802B1933D300E1AA60 /* SetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
 		D9C628822B19341200E1AA60 /* HelpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
@@ -106,9 +110,9 @@
 		D90A43D12B0961C400CFEFA6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D90A43D02B0961C400CFEFA6 /* Arduino Telent chess.app */,
-				D90A43E52B0961C500CFEFA6 /* Arduino Telent chessTests.xctest */,
-				D90A43EF2B0961C500CFEFA6 /* Arduino Telent chessUITests.xctest */,
+				D90A43D02B0961C400CFEFA6 /* Arduino Telent Chess.app */,
+				D90A43E52B0961C500CFEFA6 /* Arduino Telent ChessTests.xctest */,
+				D90A43EF2B0961C500CFEFA6 /* Arduino Telent ChessUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,8 +150,9 @@
 				D9331D8C2B1D33A0002634DB /* GlobalFunctions.swift */,
 				D9331D8E2B1D33EE002634DB /* Globals.swift */,
 				D9331D902B1D3466002634DB /* GameFunctions.swift */,
-				D9331D922B1E6E40002634DB /* ChessBoardSquare.swift */,
+				D9331D922B1E6E40002634DB /* BoardSquare.swift */,
 				D9331D942B1E7747002634DB /* GamePiecesPosition.swift */,
+				D93369952B2A58D1007EB862 /* BoardSquareTouch.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -155,8 +160,9 @@
 		D9C6287F2B19335E00E1AA60 /* AppViews */ = {
 			isa = PBXGroup;
 			children = (
-				D9C6287B2B17F3B300E1AA60 /* GameView.swift */,
+				D9C6287B2B17F3B300E1AA60 /* PlayView.swift */,
 				D9C628802B1933D300E1AA60 /* SetupView.swift */,
+				D9053A652B2B96AF00667FE3 /* GamesView.swift */,
 				D9C628842B19344B00E1AA60 /* AboutView.swift */,
 				D9C628822B19341200E1AA60 /* HelpView.swift */,
 			);
@@ -166,9 +172,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D90A43CF2B0961C400CFEFA6 /* Arduino Telent chess */ = {
+		D90A43CF2B0961C400CFEFA6 /* Arduino Telent Chess */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D90A43F92B0961C500CFEFA6 /* Build configuration list for PBXNativeTarget "Arduino Telent chess" */;
+			buildConfigurationList = D90A43F92B0961C500CFEFA6 /* Build configuration list for PBXNativeTarget "Arduino Telent Chess" */;
 			buildPhases = (
 				D90A43CC2B0961C400CFEFA6 /* Sources */,
 				D90A43CD2B0961C400CFEFA6 /* Frameworks */,
@@ -178,14 +184,14 @@
 			);
 			dependencies = (
 			);
-			name = "Arduino Telent chess";
+			name = "Arduino Telent Chess";
 			productName = "Arduino Telent chess";
-			productReference = D90A43D02B0961C400CFEFA6 /* Arduino Telent chess.app */;
+			productReference = D90A43D02B0961C400CFEFA6 /* Arduino Telent Chess.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D90A43E42B0961C500CFEFA6 /* Arduino Telent chessTests */ = {
+		D90A43E42B0961C500CFEFA6 /* Arduino Telent ChessTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D90A43FC2B0961C500CFEFA6 /* Build configuration list for PBXNativeTarget "Arduino Telent chessTests" */;
+			buildConfigurationList = D90A43FC2B0961C500CFEFA6 /* Build configuration list for PBXNativeTarget "Arduino Telent ChessTests" */;
 			buildPhases = (
 				D90A43E12B0961C500CFEFA6 /* Sources */,
 				D90A43E22B0961C500CFEFA6 /* Frameworks */,
@@ -196,14 +202,14 @@
 			dependencies = (
 				D90A43E72B0961C500CFEFA6 /* PBXTargetDependency */,
 			);
-			name = "Arduino Telent chessTests";
+			name = "Arduino Telent ChessTests";
 			productName = "Arduino Telent chessTests";
-			productReference = D90A43E52B0961C500CFEFA6 /* Arduino Telent chessTests.xctest */;
+			productReference = D90A43E52B0961C500CFEFA6 /* Arduino Telent ChessTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D90A43EE2B0961C500CFEFA6 /* Arduino Telent chessUITests */ = {
+		D90A43EE2B0961C500CFEFA6 /* Arduino Telent ChessUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D90A43FF2B0961C500CFEFA6 /* Build configuration list for PBXNativeTarget "Arduino Telent chessUITests" */;
+			buildConfigurationList = D90A43FF2B0961C500CFEFA6 /* Build configuration list for PBXNativeTarget "Arduino Telent ChessUITests" */;
 			buildPhases = (
 				D90A43EB2B0961C500CFEFA6 /* Sources */,
 				D90A43EC2B0961C500CFEFA6 /* Frameworks */,
@@ -214,9 +220,9 @@
 			dependencies = (
 				D90A43F12B0961C500CFEFA6 /* PBXTargetDependency */,
 			);
-			name = "Arduino Telent chessUITests";
+			name = "Arduino Telent ChessUITests";
 			productName = "Arduino Telent chessUITests";
-			productReference = D90A43EF2B0961C500CFEFA6 /* Arduino Telent chessUITests.xctest */;
+			productReference = D90A43EF2B0961C500CFEFA6 /* Arduino Telent ChessUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -228,6 +234,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = "Enrico Miglino";
 				TargetAttributes = {
 					D90A43CF2B0961C400CFEFA6 = {
 						CreatedOnToolsVersion = 15.0.1;
@@ -242,8 +249,8 @@
 					};
 				};
 			};
-			buildConfigurationList = D90A43CB2B0961C400CFEFA6 /* Build configuration list for PBXProject "Arduino Telent chess" */;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = D90A43CB2B0961C400CFEFA6 /* Build configuration list for PBXProject "Arduino Telent Chess" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -255,9 +262,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D90A43CF2B0961C400CFEFA6 /* Arduino Telent chess */,
-				D90A43E42B0961C500CFEFA6 /* Arduino Telent chessTests */,
-				D90A43EE2B0961C500CFEFA6 /* Arduino Telent chessUITests */,
+				D90A43CF2B0961C400CFEFA6 /* Arduino Telent Chess */,
+				D90A43E42B0961C500CFEFA6 /* Arduino Telent ChessTests */,
+				D90A43EE2B0961C500CFEFA6 /* Arduino Telent ChessUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -293,9 +300,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9331D932B1E6E40002634DB /* ChessBoardSquare.swift in Sources */,
+				D9331D932B1E6E40002634DB /* BoardSquare.swift in Sources */,
 				D96A69452B0AAD7F00AB7F2E /* Buttons.swift in Sources */,
 				D9C6287E2B192E2400E1AA60 /* TitlesView.swift in Sources */,
+				D93369962B2A58D1007EB862 /* BoardSquareTouch.swift in Sources */,
 				D90A43DD2B0961C500CFEFA6 /* Persistence.swift in Sources */,
 				D90A43E02B0961C500CFEFA6 /* Arduino_Telent_chess.xcdatamodeld in Sources */,
 				D9331D952B1E7747002634DB /* GamePiecesPosition.swift in Sources */,
@@ -304,8 +312,9 @@
 				D9C628832B19341200E1AA60 /* HelpView.swift in Sources */,
 				D96178252B1A871D00120EAE /* VrersionBuild.swift in Sources */,
 				D90A43D62B0961C400CFEFA6 /* MainContentView.swift in Sources */,
-				D9C6287C2B17F3B300E1AA60 /* GameView.swift in Sources */,
+				D9C6287C2B17F3B300E1AA60 /* PlayView.swift in Sources */,
 				D9C628812B1933D300E1AA60 /* SetupView.swift in Sources */,
+				D9053A662B2B96AF00667FE3 /* GamesView.swift in Sources */,
 				D90A43D42B0961C400CFEFA6 /* Arduino_Telent_chessApp.swift in Sources */,
 				D9C628872B1943E400E1AA60 /* test.swift in Sources */,
 				D9331D8F2B1D33EE002634DB /* Globals.swift in Sources */,
@@ -332,12 +341,12 @@
 /* Begin PBXTargetDependency section */
 		D90A43E72B0961C500CFEFA6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D90A43CF2B0961C400CFEFA6 /* Arduino Telent chess */;
+			target = D90A43CF2B0961C400CFEFA6 /* Arduino Telent Chess */;
 			targetProxy = D90A43E62B0961C500CFEFA6 /* PBXContainerItemProxy */;
 		};
 		D90A43F12B0961C500CFEFA6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D90A43CF2B0961C400CFEFA6 /* Arduino Telent chess */;
+			target = D90A43CF2B0961C400CFEFA6 /* Arduino Telent Chess */;
 			targetProxy = D90A43F02B0961C500CFEFA6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -468,7 +477,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Arduino Telent chess/Preview Content\"";
 				DEVELOPMENT_TEAM = 6FJ7HB3N3G;
 				ENABLE_PREVIEWS = YES;
@@ -496,7 +505,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Arduino Telent chess/Preview Content\"";
 				DEVELOPMENT_TEAM = 6FJ7HB3N3G;
 				ENABLE_PREVIEWS = YES;
@@ -534,7 +543,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arduino Telent chess.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Arduino Telent chess";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arduino Telent Chess.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Arduino Telent Chess";
 			};
 			name = Debug;
 		};
@@ -554,7 +563,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arduino Telent chess.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Arduino Telent chess";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arduino Telent Chess.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Arduino Telent Chess";
 			};
 			name = Release;
 		};
@@ -597,7 +606,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D90A43CB2B0961C400CFEFA6 /* Build configuration list for PBXProject "Arduino Telent chess" */ = {
+		D90A43CB2B0961C400CFEFA6 /* Build configuration list for PBXProject "Arduino Telent Chess" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D90A43F72B0961C500CFEFA6 /* Debug */,
@@ -606,7 +615,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D90A43F92B0961C500CFEFA6 /* Build configuration list for PBXNativeTarget "Arduino Telent chess" */ = {
+		D90A43F92B0961C500CFEFA6 /* Build configuration list for PBXNativeTarget "Arduino Telent Chess" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D90A43FA2B0961C500CFEFA6 /* Debug */,
@@ -615,7 +624,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D90A43FC2B0961C500CFEFA6 /* Build configuration list for PBXNativeTarget "Arduino Telent chessTests" */ = {
+		D90A43FC2B0961C500CFEFA6 /* Build configuration list for PBXNativeTarget "Arduino Telent ChessTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D90A43FD2B0961C500CFEFA6 /* Debug */,
@@ -624,7 +633,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D90A43FF2B0961C500CFEFA6 /* Build configuration list for PBXNativeTarget "Arduino Telent chessUITests" */ = {
+		D90A43FF2B0961C500CFEFA6 /* Build configuration list for PBXNativeTarget "Arduino Telent ChessUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D90A44002B0961C500CFEFA6 /* Debug */,

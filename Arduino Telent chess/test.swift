@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct TestTouchView: View {
     let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 3)
     @State private var selectedTiles: Set<Int> = []
 
@@ -33,6 +33,6 @@ struct TileView: View {
 }
 
 #Preview {
-    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    TestTouchView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }
 

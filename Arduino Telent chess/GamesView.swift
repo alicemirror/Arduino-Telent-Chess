@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct SetupView: View {
+struct GamesView: View {
     
     @Environment(\.managedObjectContext) private var viewContext
     
@@ -17,7 +17,7 @@ struct SetupView: View {
         animation: .default)
     private var items: FetchedResults<Item>
     
-    // BODY OF THE GAME VIEW
+    // BODY OF THE GAMES VIEW
     var body: some View {
         NavigationView {
             ZStack {
@@ -25,10 +25,7 @@ struct SetupView: View {
                 appColors["background"]
                     .ignoresSafeArea()
                 // --------------------- Page title
-                TitleView(title: "Setup")
-
-                // --------------------- Game board
-
+                TitleView(title: "Games Archive")
                 
             } // ZStack
         } // Navigation view
@@ -36,5 +33,5 @@ struct SetupView: View {
 } // Main content view
 
 #Preview {
-    SetupView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    GamesView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }
