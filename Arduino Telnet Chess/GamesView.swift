@@ -24,7 +24,7 @@ struct GamesView: View {
                 // Background color
                 appColors["background"]
                     .ignoresSafeArea()
-                // --------------------- Page title
+                // Page Title
                 TitleView(title: "Games Archive")
                 
             } // ZStack

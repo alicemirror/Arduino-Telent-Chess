@@ -50,16 +50,13 @@ struct MainContentView: View {
                     // Background color
                     appColors["background"]
                         .ignoresSafeArea()
-                    // Home screen image
-                    Image("HomeScreenImage")
-                        .resizable()
-                        .frame(width: 400, height: 400)
-                    
-                    // Application version
+                    ShowLogoShed()
+                    ShowLogoHome()
+                    ShowLogoElement14()
                     VersionBuild()
-                    
                     // Page title
-                    TitleView(title: "Arduino Chess")
+                    MainTitleView(title: "Telnet Chess",
+                                  subTitle: "Arduino UNO R4 Edition")
                 } // Navigation view
             } // View
             .toolbar {
@@ -70,7 +67,7 @@ struct MainContentView: View {
                         Text("Play")
                             .foregroundColor(appColors["foreground"])
                             .font(.headline)
-                    }
+                    } // Play
                 } // ToolbarItem
                     
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -134,6 +131,6 @@ struct MainContentView: View {
 } // Main content view
 
 
-//#Preview {
-//    MainContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-//}
+#Preview {
+    MainContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+}
