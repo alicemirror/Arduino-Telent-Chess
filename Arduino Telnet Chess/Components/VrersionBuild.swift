@@ -9,7 +9,6 @@ import SwiftUI
 
 // Generic page view title
 struct VersionBuild: View {
-    // --------------------- Variables
     // Retrieve the version and buld numbernumber.
     var appVersion: String {
         if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
@@ -25,15 +24,14 @@ struct VersionBuild: View {
         } // Subversion is string
         return ".---"
     } // appBuildNumber
-    // --------------------- Variables End
 
     var body: some View {
         // Application version and build number
         GeometryReader {
             geometry in
             Text("Version \(appVersion).\(appBuildNumber)")
-                .position(x: geometry.size.width / 2, y: geometry.size.height / 1.1)
-                .font(.custom("San Francisco (SF Pro Text)", size: 32))
+                .position(x: geometry.size.width / 2, y: geometry.size.height / 1.05)
+                .font(.custom("San Francisco (SF Pro Text)", size: 22))
                 .fontWeight(.bold)
                 .foregroundColor(.white)
                 .lineSpacing(10)

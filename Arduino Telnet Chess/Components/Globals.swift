@@ -41,6 +41,7 @@ let appColors: [String: Color] = [
         "background": .teal,
         "foreground": .white,
         "titleText": .teal,
+        "subTitleText": .white,
         "normalText": .white,
         "stroke": .white,
         "selected": .gray
