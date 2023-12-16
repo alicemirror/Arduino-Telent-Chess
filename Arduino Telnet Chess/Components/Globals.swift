@@ -14,7 +14,7 @@ import CoreData
 // Colors arew in couples (white, black sides) and the indesx
 // should point to the even first of every couple (0, 2, 4, etc.)
 let boardColors = [
-    Color.white, Color.purple,
+    Color.white, Color.indigo,
     Color.white, Color.brown,
     Color.white, Color.red,
     Color.yellow, Color.brown,
@@ -28,12 +28,21 @@ let boardColors = [
 // This dictionary is used to represent the theme
 // with a string.
 let boardThemes: [String: Int] = [
-    "white_purple": 0,
+    "white_indigo": 0,
     "white_brown": 2,
     "red_white": 4,
     "yellow_brown": 6,
     "white_black": 8,
     "white_teal": 10
+    ]
+
+// transparency values for the two states of the chessboard
+// position when it is touched or untouched.
+// Note that if the untouched opacity is set to full zero
+// it has no effect.
+let transparencyTouch: [String: CGFloat] = [
+    "touched": 0.5,
+    "untouched": 0.01
     ]
 
 // Appplication colors dictionary
@@ -44,7 +53,7 @@ let appColors: [String: Color] = [
         "subTitleText": .white,
         "normalText": .white,
         "stroke": .white,
-        "selected": .gray
+        "selected": .purple
     ]
 
 // 2D array showing the initial state of the board pieces.

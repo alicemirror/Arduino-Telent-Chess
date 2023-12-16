@@ -66,9 +66,7 @@ struct PlayView: View {
                     } // LazyHGrid
                     .position(CGPoint(x: geometry.size.width / 2,
                                       y: geometry.size.height / 2) )
-
                 } // GeometryReader
-
             } // ZStack
         } // Navigation view
     } // View

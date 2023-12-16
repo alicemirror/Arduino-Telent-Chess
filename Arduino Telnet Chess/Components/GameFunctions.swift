@@ -15,7 +15,7 @@ func isLightSquare() -> Int {
     // Get the index of the desired couple of colors array,
     // chose two by two. The first color is for white tiles
     // while the second is for the black tiles.
-    let baseColorArray: Int? = boardThemes["white_teal"]
+    let baseColorArray: Int? = boardThemes["white_indigo"]
 
     if isWhite {
         idx = baseColorArray!

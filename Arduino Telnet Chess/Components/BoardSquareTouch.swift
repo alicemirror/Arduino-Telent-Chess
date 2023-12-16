@@ -15,10 +15,11 @@ struct BoardSquareTouch: View {
 
     var body: some View {
         Rectangle()
-            .stroke(isSelected ? .black : .white, lineWidth: tilesStrokeWidth)
-            .frame(width: squareBoardSize, height: squareBoardSize, alignment: .center)
+            .frame(width: squareBoardSize,
+                   height: squareBoardSize,
+                   alignment: .center)
             .cornerRadius(tilesCornerRadius)
-            .foregroundColor(boardColors[isLightSquare()])
+            .foregroundStyle(appColors["selected"]!)
+            .opacity(isSelected ? transparencyTouch["touched"]! : transparencyTouch["untouched"]!)
     }
 }
-
