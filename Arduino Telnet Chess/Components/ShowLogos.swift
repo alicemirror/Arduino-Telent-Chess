@@ -15,7 +15,7 @@ struct ShowLogoHome: View {
             geometry in
             Image("HomeScreenImage")
                 .resizable()
-                .frame(width: 420, height: 420)
+                .frame(width: 400, height: 400)
                 .position(x: geometry.size.width / 2, y: (geometry.size.height / 2.4) - 30)
         } // Title background geometry
     } // body

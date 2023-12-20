@@ -56,6 +56,12 @@ let appColors: [String: Color] = [
         "selected": .purple
     ]
 
+// Column name based on the index number
+// (zero based) between 0 and 7
+var columnName: [String] = [
+    "a", "b", "c", "d", "e", "f", "g", "h"
+]
+
 // 2D array showing the initial state of the board pieces.
 // Uppercase are white, lowercase are black.
 let gamePiecesPosition: [String] = [
@@ -96,7 +102,7 @@ let pieceSize = Double(size / 8.7)
 let tilesCornerRadius: CGFloat = 5
 
 // Width of the stroke around the chessboard cells
-let tilesStrokeWidth: CGFloat = 4
+let tilesStrokeWidth: CGFloat = 2
 
 // Grid items we'll use in the 'LazyHGrid' to draw the
 // board squares.

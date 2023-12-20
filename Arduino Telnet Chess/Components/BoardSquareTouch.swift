@@ -21,5 +21,5 @@ struct BoardSquareTouch: View {
             .cornerRadius(tilesCornerRadius)
             .foregroundStyle(appColors["selected"]!)
             .opacity(isSelected ? transparencyTouch["touched"]! : transparencyTouch["untouched"]!)
-    }
-}
+    } // Body
+} // View
