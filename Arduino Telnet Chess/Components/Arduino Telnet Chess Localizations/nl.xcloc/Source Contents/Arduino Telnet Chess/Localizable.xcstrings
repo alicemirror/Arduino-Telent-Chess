@@ -1,0 +1,34 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "About" : {
+
+    },
+    "Games" : {
+
+    },
+    "Help" : {
+
+    },
+    "Play" : {
+
+    },
+    "Setup" : {
+
+    },
+    "Version %@.%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Version %1$@.%2$@"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
