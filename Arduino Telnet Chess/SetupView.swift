@@ -9,7 +9,6 @@ import SwiftUI
 import CoreData
 
 struct SetupView: View {
-    
     @Environment(\.managedObjectContext) private var viewContext
     
     @FetchRequest(
@@ -17,22 +16,24 @@ struct SetupView: View {
         animation: .default)
     private var items: FetchedResults<Item>
     
-    // BODY OF THE GAME VIEW
+    // BODY OF THE SETUP VIEW
     var body: some View {
-        NavigationView {
-            ZStack {
-                // Background color
-                appColors["background"]
-                    .ignoresSafeArea()
-                // --------------------- Page title
-                TitleView(title: "Setup")
-
-                // --------------------- Game board
-
-                
-            } // ZStack
-        } // Navigation view
-    } // View
+        ZStack {
+            // Background color
+            appColors["background"]
+                .ignoresSafeArea()
+            // Page Title
+            TitleView(title: "Setup")
+                ScrollView {
+                    VStack {
+                        SetupTitleView(section: "Color Theme")
+                        SelectChessboardThemeView()
+                    } // VStack
+                } // Scrollview
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .padding(.top, 100)
+        } // ZStack
+    } // body
 } // Main content view
 
 #Preview {

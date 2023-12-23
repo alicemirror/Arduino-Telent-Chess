@@ -53,7 +53,8 @@ let appColors: [String: Color] = [
         "subTitleText": .white,
         "normalText": .white,
         "stroke": .white,
-        "selected": .purple
+        "selected": .purple,
+        "sectionText": .white
     ]
 
 // Column name based on the index number
@@ -146,5 +147,13 @@ let rowsTouch = [
     GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center),
     GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center),
     GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center),
+    GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center)
+]
+
+// Grid items we'll use in the 'LazyHGrid' to identify the touch
+// areas corresponding to the squares.
+// Every item of the array represent one of eight vertical
+// squares.
+let rowsSetup = [
     GridItem(.fixed(squareSize), spacing: spacingGameBoardSquares, alignment: .center)
 ]

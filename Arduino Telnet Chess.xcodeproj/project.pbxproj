@@ -23,13 +23,14 @@
 		D9331D952B1E7747002634DB /* GamePiecesPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9331D942B1E7747002634DB /* GamePiecesPosition.swift */; };
 		D93369962B2A58D1007EB862 /* BoardSquareTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93369952B2A58D1007EB862 /* BoardSquareTouch.swift */; };
 		D96178252B1A871D00120EAE /* VrersionBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96178242B1A871D00120EAE /* VrersionBuild.swift */; };
+		D961E7012B3742E200F4EE19 /* SetupTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961E7002B3742E200F4EE19 /* SetupTitleView.swift */; };
 		D96A69452B0AAD7F00AB7F2E /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A69442B0AAD7F00AB7F2E /* Buttons.swift */; };
 		D9C6287C2B17F3B300E1AA60 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C6287B2B17F3B300E1AA60 /* PlayView.swift */; };
 		D9C6287E2B192E2400E1AA60 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C6287D2B192E2400E1AA60 /* TitleView.swift */; };
 		D9C628812B1933D300E1AA60 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C628802B1933D300E1AA60 /* SetupView.swift */; };
 		D9C628832B19341200E1AA60 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C628822B19341200E1AA60 /* HelpView.swift */; };
 		D9C628852B19344B00E1AA60 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C628842B19344B00E1AA60 /* AboutView.swift */; };
-		D9C628872B1943E400E1AA60 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C628862B1943E400E1AA60 /* test.swift */; };
+		D9C628872B1943E400E1AA60 /* SelectChessboardThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C628862B1943E400E1AA60 /* SelectChessboardThemeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,13 +70,14 @@
 		D9331D942B1E7747002634DB /* GamePiecesPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePiecesPosition.swift; sourceTree = "<group>"; };
 		D93369952B2A58D1007EB862 /* BoardSquareTouch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardSquareTouch.swift; sourceTree = "<group>"; };
 		D96178242B1A871D00120EAE /* VrersionBuild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VrersionBuild.swift; sourceTree = "<group>"; };
+		D961E7002B3742E200F4EE19 /* SetupTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupTitleView.swift; sourceTree = "<group>"; };
 		D96A69442B0AAD7F00AB7F2E /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		D9C6287B2B17F3B300E1AA60 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
 		D9C6287D2B192E2400E1AA60 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		D9C628802B1933D300E1AA60 /* SetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
 		D9C628822B19341200E1AA60 /* HelpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		D9C628842B19344B00E1AA60 /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
-		D9C628862B1943E400E1AA60 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		D9C628862B1943E400E1AA60 /* SelectChessboardThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectChessboardThemeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +129,6 @@
 				D96A69432B0AAD4C00AB7F2E /* Components */,
 				D90A43D32B0961C400CFEFA6 /* Arduino_Telent_chessApp.swift */,
 				D90A43D52B0961C400CFEFA6 /* MainContentView.swift */,
-				D9C628862B1943E400E1AA60 /* test.swift */,
 				D90A43D72B0961C500CFEFA6 /* Assets.xcassets */,
 				D90A43DC2B0961C500CFEFA6 /* Persistence.swift */,
 				D90A43DE2B0961C500CFEFA6 /* Arduino_Telent_chess.xcdatamodeld */,
@@ -148,8 +149,10 @@
 		D96A69432B0AAD4C00AB7F2E /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D9C628862B1943E400E1AA60 /* SelectChessboardThemeView.swift */,
 				D96A69442B0AAD7F00AB7F2E /* Buttons.swift */,
 				D9C6287D2B192E2400E1AA60 /* TitleView.swift */,
+				D961E7002B3742E200F4EE19 /* SetupTitleView.swift */,
 				D927ADE92B2D083300008D67 /* MainTitleView.swift */,
 				D927ADEB2B2D0A0800008D67 /* ShowLogos.swift */,
 				D96178242B1A871D00120EAE /* VrersionBuild.swift */,
@@ -325,7 +328,8 @@
 				D9053A662B2B96AF00667FE3 /* GamesView.swift in Sources */,
 				D90A43D42B0961C400CFEFA6 /* Arduino_Telent_chessApp.swift in Sources */,
 				D927ADEA2B2D083300008D67 /* MainTitleView.swift in Sources */,
-				D9C628872B1943E400E1AA60 /* test.swift in Sources */,
+				D9C628872B1943E400E1AA60 /* SelectChessboardThemeView.swift in Sources */,
+				D961E7012B3742E200F4EE19 /* SetupTitleView.swift in Sources */,
 				D9331D8F2B1D33EE002634DB /* Globals.swift in Sources */,
 				D9331D8D2B1D33A0002634DB /* GlobalFunctions.swift in Sources */,
 			);
