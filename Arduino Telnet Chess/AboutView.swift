@@ -25,7 +25,7 @@ struct AboutView: View {
                 appColors["background"]
                     .ignoresSafeArea()
                 // --------------------- Page title
-                TitleView(title: "About")
+                TitleViewPortrait(title: "About")
 
                 // --------------------- Game board
 

@@ -23,7 +23,7 @@ struct SetupView: View {
             appColors["background"]
                 .ignoresSafeArea()
             // Page Title
-            TitleView(title: "Setup")
+            TitleViewPortrait(title: "Setup")
                 ScrollView {
                     VStack {
                         SetupTitleView(section: "Color Theme")

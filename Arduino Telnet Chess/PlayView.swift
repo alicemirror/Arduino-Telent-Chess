@@ -22,7 +22,7 @@ struct PlayView: View {
                 appColors["background"]
                     .ignoresSafeArea()
                 // Page title
-                TitleView(title: "Play Game")
+                TitleViewPortrait(title: "Play Game")
 
                 // Get the screen geometry to calculate the single square size and the 8x8
                 // chessboard size

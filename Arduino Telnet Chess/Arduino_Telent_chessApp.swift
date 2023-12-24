@@ -13,10 +13,9 @@ struct Arduino_Telent_chessApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MainContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
-//            RectangleListView()
-//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            CustomUIKitView(portraitLayout: AnyView(MainContentViewPortrait()),
+                            landscapeLayout: AnyView(MainContentViewLandscape()))
+            .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

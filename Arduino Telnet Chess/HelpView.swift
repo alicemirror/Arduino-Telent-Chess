@@ -25,7 +25,7 @@ struct HelpView: View {
                 appColors["background"]
                     .ignoresSafeArea()
                 // --------------------- Page title
-                TitleView(title: "Help")
+                TitleViewPortrait(title: "Help")
 
                 // --------------------- Game board
 

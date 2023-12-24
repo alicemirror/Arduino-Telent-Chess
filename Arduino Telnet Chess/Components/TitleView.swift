@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-// Generic page view title
-struct TitleView: View {
+// Generic page view title portrait
+struct TitleViewPortrait: View {
     // Title text string
     let title: String
 
@@ -34,5 +34,28 @@ struct TitleView: View {
                 .kerning(1.5)
                 .opacity(1)
         } // Title geometry
-    }
-}
+    } // body
+} // View
+
+// Generic page view title landscape
+struct TitleViewLandscape: View {
+    // Title text string
+    let title: String
+
+    var body: some View {
+        // Page title
+        GeometryReader {
+            geometry in
+            Text(title)
+                .position(x: geometry.size.width / 6.5, y: (geometry.size.height / 18) - 20)
+                .font(.custom("San Francisco (SF Pro Text)", size: 32))
+                .fontWeight(.bold)
+                .foregroundColor(appColors["titleText"])
+                .lineSpacing(2)
+                .truncationMode(.tail)
+                .kerning(1.5)
+                .opacity(1)
+        } // Title geometry
+    } // body
+} // View
+

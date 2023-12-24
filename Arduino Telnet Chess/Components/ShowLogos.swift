@@ -1,5 +1,5 @@
 //
-//  TitlesView.swift
+//  ShowLogos.swift
 //  Arduino Telent chess
 //
 //  Created by Enrico Miglino on 30/11/23.
@@ -21,8 +21,8 @@ struct ShowLogoHome: View {
     } // body
 } // ShowLogo
 
-// Show The Shed logo
-struct ShowLogoShed: View {
+// Show The Shed logo portrait
+struct ShowLogoShedPortrait: View {
     var body: some View {
         // Page title background
         GeometryReader {
@@ -35,8 +35,22 @@ struct ShowLogoShed: View {
     } // body
 } // ShowLogo
 
-// Show Element14 logo
-struct ShowLogoElement14: View {
+// Show The Shed logo landscape
+struct ShowLogoShedLandscape: View {
+    var body: some View {
+        // Page title background
+        GeometryReader {
+            geometry in
+            Image("TheShed")
+                .resizable()
+                .frame(width: 140, height: 50)
+                .position(x: geometry.size.width / 6.5, y: (geometry.size.height / 1.3))
+        } // Title background geometry
+    } // body
+} // ShowLogo
+
+// Show Element14 logo portrait
+struct ShowLogoElement14Portrait: View {
     var body: some View {
         // Page title background
         GeometryReader {
@@ -45,6 +59,20 @@ struct ShowLogoElement14: View {
                 .resizable()
                 .frame(width: 176, height: 28)
                 .position(x: geometry.size.width / 2, y: geometry.size.height / 1.18)
+        } // Title background geometry
+    } // body
+} // ShowLogo
+
+// Show Element14 logo landscape
+struct ShowLogoElement14Landscape: View {
+    var body: some View {
+        // Page title background
+        GeometryReader {
+            geometry in
+            Image("element14")
+                .resizable()
+                .frame(width: 150, height: 20)
+                .position(x: geometry.size.width / 6.5, y: (geometry.size.height / 1.18) + 10)
         } // Title background geometry
     } // body
 } // ShowLogo

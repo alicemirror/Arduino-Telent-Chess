@@ -1,5 +1,5 @@
 //
-//  MainContentView.swift
+//  MainContentViewPortrait.swift
 //  Arduino Telent chess
 //
 //  Created by Enrico Miglino on 18/11/23.
@@ -8,25 +8,11 @@
 import SwiftUI
 import CoreData
 
-// Enumerates the secondary level options views
-// as hashable (can produce a hash integer)
-enum DestinationOptions: Hashable {
-    case PlayView
-    case GamesView
-    case SetupView
-    case HelpView
-    case AboutView
-} // DestinationOptions
-
-// ---------------------
-// Main view components
-struct MainContentView: View {
+// Portrait main view components
+struct MainContentViewPortrait: View {
     // Manage the DestinationOptions for the navigation stack
     @State private var navigationSelection: DestinationOptions?
 
-    // ---------------------
-    // MAIN VIEW BODY
-    // ---------------------
     var body: some View {
         // Navigation stack to manage toolbar navigation
         NavigationStack {
@@ -50,9 +36,9 @@ struct MainContentView: View {
                     // Background color
                     appColors["background"]
                         .ignoresSafeArea()
-                    ShowLogoShed()
+                    ShowLogoShedPortrait()
                     ShowLogoHome()
-                    ShowLogoElement14()
+                    ShowLogoElement14Portrait()
                     VersionBuild()
                     // Page title
                     MainTitleView(title: "Telnet Chess",
@@ -132,5 +118,5 @@ struct MainContentView: View {
 
 
 #Preview {
-    MainContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    MainContentViewLandscape().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }
