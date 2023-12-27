@@ -44,7 +44,7 @@ struct ShowLogoShedLandscape: View {
             Image("TheShed")
                 .resizable()
                 .frame(width: 140, height: 50)
-                .position(x: geometry.size.width / 6.5, y: (geometry.size.height / 1.3))
+                .position(x: geometry.size.width / 6.5, y: (geometry.size.height / 1.18) - 10)
         } // Title background geometry
     } // body
 } // ShowLogo
@@ -72,7 +72,7 @@ struct ShowLogoElement14Landscape: View {
             Image("element14")
                 .resizable()
                 .frame(width: 150, height: 20)
-                .position(x: geometry.size.width / 6.5, y: (geometry.size.height / 1.18) + 10)
+                .position(x: geometry.size.width / 6.5, y: (geometry.size.height / 1.18) + 30)
         } // Title background geometry
     } // body
 } // ShowLogo

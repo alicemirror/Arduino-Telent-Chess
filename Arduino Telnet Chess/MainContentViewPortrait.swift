@@ -30,7 +30,7 @@ struct MainContentViewPortrait: View {
                         destination in
                         NavigationLink("", tag: destination,
                                        selection: $navigationSelection) {
-                            DestinationoptionsView(for: destination)
+                            ToolbarDestinationOptionsView(for: destination)
                         } // selection: $navigationSelection)
                     } // id: \.self)
                     // Background color
@@ -47,60 +47,41 @@ struct MainContentViewPortrait: View {
             } // View
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: {
+                    ToolbarButton(title: "Play", action: {
                         navigationSelection = .PlayView
-                    } ) {
-                        Text("Play")
-                            .foregroundColor(appColors["foreground"])
-                            .font(.headline)
-                    } // Play
+                    } )
                 } // ToolbarItem
                     
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: {
+                    ToolbarButton(title: "Games", action: {
                         navigationSelection = .GamesView
-                    } ) {
-                        Text("Games")
-                            .foregroundColor(appColors["foreground"])
-                            .font(.headline)
-                    }
+                    } )
                 } // ToolbarItem
                     
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: {
+                    ToolbarButton(title: "Setup", action: {
                         navigationSelection = .SetupView
-                    } ) {
-                        Text("Setup")
-                            .foregroundColor(appColors["foreground"])
-                            .font(.headline)
-                    }
+                    } )
                 } // ToolbarItem
                 
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: {
+                    ToolbarButton(title: "Help", action: {
                         navigationSelection = .HelpView
-                    } ) {
-                        Text("Help")
-                            .foregroundColor(appColors["foreground"])
-                            .font(.headline)
-                    }
+                    } )
                 } // ToolbarItem
                 
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: {
+                    ToolbarButton(title: "About", action: {
                         navigationSelection = .AboutView
-                    } ) {
-                        Text("About")
-                            .foregroundColor(appColors["foreground"])
-                            .font(.headline)
-                    }
+                    } )
                 } // ToolbarItem
                 
                 } // toolbar
             } // Navigation Stack
         } // Body view
+    
     @ViewBuilder
-    private func DestinationoptionsView(for destination: DestinationOptions) -> some View {
+    private func ToolbarDestinationOptionsView(for destination: DestinationOptions) -> some View {
         switch destination {
         case .PlayView:
             PlayView()
@@ -118,5 +99,5 @@ struct MainContentViewPortrait: View {
 
 
 #Preview {
-    MainContentViewLandscape().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    MainContentViewPortrait().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }
