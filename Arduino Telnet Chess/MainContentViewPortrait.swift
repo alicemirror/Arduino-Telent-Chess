@@ -11,7 +11,7 @@ import CoreData
 // Portrait main view components
 struct MainContentViewPortrait: View {
     // Manage the DestinationOptions for the navigation stack
-    @State private var navigationSelection: DestinationOptions?
+    @State private var navigationSelection: ToolbarDestinationOptions?
 
     var body: some View {
         // Navigation stack to manage toolbar navigation
@@ -21,11 +21,11 @@ struct MainContentViewPortrait: View {
                 ZStack {
                     // Hidden Navigation Links
                     ForEach([
-                        DestinationOptions.PlayView,
-                        DestinationOptions.GamesView,
-                        DestinationOptions.SetupView,
-                        DestinationOptions.HelpView,
-                        DestinationOptions.AboutView
+                        ToolbarDestinationOptions.toolbarPlayView,
+                        ToolbarDestinationOptions.toolbarGamesView,
+                        ToolbarDestinationOptions.toolbarSetupView,
+                        ToolbarDestinationOptions.toolbarHelpView,
+                        ToolbarDestinationOptions.toolbarAboutView
                     ], id: \.self) {
                         destination in
                         NavigationLink("", tag: destination,
@@ -48,31 +48,31 @@ struct MainContentViewPortrait: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     ToolbarButton(title: "Play", action: {
-                        navigationSelection = .PlayView
+                        navigationSelection = .toolbarPlayView
                     } )
                 } // ToolbarItem
                     
                 ToolbarItem(placement: .navigationBarLeading) {
                     ToolbarButton(title: "Games", action: {
-                        navigationSelection = .GamesView
+                        navigationSelection = .toolbarGamesView
                     } )
                 } // ToolbarItem
                     
                 ToolbarItem(placement: .navigationBarLeading) {
                     ToolbarButton(title: "Setup", action: {
-                        navigationSelection = .SetupView
+                        navigationSelection = .toolbarSetupView
                     } )
                 } // ToolbarItem
                 
                 ToolbarItem(placement: .navigationBarLeading) {
                     ToolbarButton(title: "Help", action: {
-                        navigationSelection = .HelpView
+                        navigationSelection = .toolbarHelpView
                     } )
                 } // ToolbarItem
                 
                 ToolbarItem(placement: .navigationBarLeading) {
                     ToolbarButton(title: "About", action: {
-                        navigationSelection = .AboutView
+                        navigationSelection = .toolbarAboutView
                     } )
                 } // ToolbarItem
                 
@@ -81,17 +81,17 @@ struct MainContentViewPortrait: View {
         } // Body view
     
     @ViewBuilder
-    private func ToolbarDestinationOptionsView(for destination: DestinationOptions) -> some View {
+    private func ToolbarDestinationOptionsView(for destination: ToolbarDestinationOptions) -> some View {
         switch destination {
-        case .PlayView:
+        case .toolbarPlayView:
             PlayView()
-        case .GamesView:
+        case .toolbarGamesView:
             GamesView()
-        case .SetupView:
+        case .toolbarSetupView:
             SetupView()
-        case .HelpView:
+        case .toolbarHelpView:
             HelpView()
-        case .AboutView:
+        case .toolbarAboutView:
             AboutView()
         } // case
     } // View

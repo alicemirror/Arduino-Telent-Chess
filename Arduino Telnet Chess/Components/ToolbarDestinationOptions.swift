@@ -10,12 +10,16 @@ import SwiftUI
 
 // Enumerates the secondary level options views
 // as hashable (can produce a hash integer)
-enum DestinationOptions: Hashable {
-    case PlayView
-    case GamesView
-    case SetupView
-    case HelpView
-    case AboutView
+enum ToolbarDestinationOptions: Hashable {
+    case toolbarPlayView
+    case toolbarGamesView
+    case toolbarSetupView
+    case toolbarHelpView
+    case toolbarAboutView
 } // DestinationOptions
 
-// ---------------------
+
+// Destination options enum associated to every custom button
+enum CustomDestinationOptions {
+    case playView, gamesView, setupView, helpView, aboutView
+}

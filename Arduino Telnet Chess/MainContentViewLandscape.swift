@@ -8,11 +8,6 @@
 import SwiftUI
 import CoreData
 
-// Destination options enum associated to every custom button
-enum CustomDestinationOptions {
-    case playView, gamesView, setupView, helpView, aboutView
-}
-
 // Main view components landscape layout
 struct MainContentViewLandscape: View {
     @State private var selectedDestination: CustomDestinationOptions?
@@ -29,24 +24,33 @@ struct MainContentViewLandscape: View {
                     // Page title
                     TitleViewLandscape(title: "Telnet Chess")
                     // Option buttons
-                    VStack {
-                        CustomMenuButton(title: "Play", action: {
-                            selectedDestination = .playView
-                        } )
-                        CustomMenuButton(title: "Games", action: {
-                            selectedDestination = .gamesView
-                        } )
-                        CustomMenuButton(title: "Setup", action: {
-                            selectedDestination = .setupView
-                        } )
-                        CustomMenuButton(title: "Help", action: {
-                            selectedDestination = .helpView
-                        } )
-                        CustomMenuButton(title: "About", action: {
-                            selectedDestination = .aboutView
-                        } )
-                    } // VStack
-                    
+                    GeometryReader {
+                        geometry in
+                        VStack {
+                            CustomMenuButton(title: "Play", action: {
+                                selectedDestination = .playView
+                            } )
+                            .padding(curstomMenutPadding)
+                            CustomMenuButton(title: "Games", action: {
+                                selectedDestination = .gamesView
+                            } )
+                            .padding(curstomMenutPadding)
+                            CustomMenuButton(title: "Setup", action: {
+                                selectedDestination = .setupView
+                            } )
+                            .padding(curstomMenutPadding)
+                            CustomMenuButton(title: "Help", action: {
+                                selectedDestination = .helpView
+                            } )
+                            .padding(curstomMenutPadding)
+                            CustomMenuButton(title: "About", action: {
+                                selectedDestination = .aboutView
+                            } )
+                            .padding(curstomMenutPadding)
+                        } // VStack
+                        .position(x: geometry.size.width / 8, y: geometry.size.height / 2.8)
+                    } // Geometry
+
                     // Navigate to the selected view
                     if let destination = selectedDestination {
                         CustomDestinationOptionsView(for: destination)
@@ -61,6 +65,7 @@ struct MainContentViewLandscape: View {
                 )
             } // Navigation View
         } // Navigation Stack
+        .edgesIgnoringSafeArea(.all) // Covers the full screen
     } // Body view
     
     

@@ -107,6 +107,9 @@ let tilesCornerRadius: CGFloat = 5
 // Width of the stroke around the chessboard cells
 let tilesStrokeWidth: CGFloat = 2
 
+// Width of the stroke around the chessboard cells
+let curstomMenutPadding: CGFloat = 4
+
 // Grid items we'll use in the 'LazyHGrid' to draw the
 // board squares.
 // Every item of the array represent one column of eight vertical
