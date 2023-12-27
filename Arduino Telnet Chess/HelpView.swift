@@ -24,10 +24,7 @@ struct HelpView: View {
                 // Background color
                 appColors["background"]
                     .ignoresSafeArea()
-                // --------------------- Page title
                 TitleViewPortrait(title: "Help")
-
-                // --------------------- Game board
 
                 
             } // ZStack

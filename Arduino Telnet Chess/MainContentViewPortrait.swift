@@ -41,37 +41,37 @@ struct MainContentViewPortrait: View {
                     ShowLogoElement14Portrait()
                     VersionBuild()
                     // Page title
-                    MainTitleView(title: "Telnet Chess",
-                                  subTitle: "Arduino UNO R4 Edition")
+                    MainTitleView(title: sTitle,
+                                  subTitle: sSubTitle)
                 } // Navigation view
             } // View
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    ToolbarButton(title: "Play", action: {
+                    ToolbarButton(title: sPlay, action: {
                         navigationSelection = .toolbarPlayView
                     } )
                 } // ToolbarItem
                     
                 ToolbarItem(placement: .navigationBarLeading) {
-                    ToolbarButton(title: "Games", action: {
+                    ToolbarButton(title: sGames, action: {
                         navigationSelection = .toolbarGamesView
                     } )
                 } // ToolbarItem
                     
                 ToolbarItem(placement: .navigationBarLeading) {
-                    ToolbarButton(title: "Setup", action: {
+                    ToolbarButton(title: sSetup, action: {
                         navigationSelection = .toolbarSetupView
                     } )
                 } // ToolbarItem
                 
                 ToolbarItem(placement: .navigationBarLeading) {
-                    ToolbarButton(title: "Help", action: {
+                    ToolbarButton(title: sHelp, action: {
                         navigationSelection = .toolbarHelpView
                     } )
                 } // ToolbarItem
                 
                 ToolbarItem(placement: .navigationBarLeading) {
-                    ToolbarButton(title: "About", action: {
+                    ToolbarButton(title: sAbout, action: {
                         navigationSelection = .toolbarAboutView
                     } )
                 } // ToolbarItem

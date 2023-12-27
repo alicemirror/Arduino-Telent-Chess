@@ -22,28 +22,28 @@ struct MainContentViewLandscape: View {
                     ShowLogoShedLandscape()
                     ShowLogoElement14Landscape()
                     // Page title
-                    TitleViewLandscape(title: "Telnet Chess")
+                    TitleViewLandscape(title: sTitle)
                     // Option buttons
                     GeometryReader {
                         geometry in
                         VStack {
-                            CustomMenuButton(title: "Play", action: {
+                            CustomMenuButton(title: sPlay, action: {
                                 selectedDestination = .playView
                             } )
                             .padding(curstomMenutPadding)
-                            CustomMenuButton(title: "Games", action: {
+                            CustomMenuButton(title: sGames, action: {
                                 selectedDestination = .gamesView
                             } )
                             .padding(curstomMenutPadding)
-                            CustomMenuButton(title: "Setup", action: {
+                            CustomMenuButton(title: sSetup, action: {
                                 selectedDestination = .setupView
                             } )
                             .padding(curstomMenutPadding)
-                            CustomMenuButton(title: "Help", action: {
+                            CustomMenuButton(title: sHelp, action: {
                                 selectedDestination = .helpView
                             } )
                             .padding(curstomMenutPadding)
-                            CustomMenuButton(title: "About", action: {
+                            CustomMenuButton(title: sAbout, action: {
                                 selectedDestination = .aboutView
                             } )
                             .padding(curstomMenutPadding)
