@@ -54,7 +54,9 @@ let appColors: [String: Color] = [
         "normalText": .white,
         "stroke": .white,
         "selected": .purple,
-        "sectionText": .white
+        "sectionText": .white,
+        "landscapeMenu": .teal,
+        "toolbarMenu": .white
     ]
 
 // Column name based on the index number
@@ -104,6 +106,9 @@ let tilesCornerRadius: CGFloat = 5
 
 // Width of the stroke around the chessboard cells
 let tilesStrokeWidth: CGFloat = 2
+
+// Width of the stroke around the chessboard cells
+let curstomMenutPadding: CGFloat = 4
 
 // Grid items we'll use in the 'LazyHGrid' to draw the
 // board squares.

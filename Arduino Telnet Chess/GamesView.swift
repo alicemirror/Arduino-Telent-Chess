@@ -23,7 +23,7 @@ struct GamesView: View {
                 appColors["background"]
                     .ignoresSafeArea()
                 // Page Title
-                TitleViewPortrait(title: "Games Archive")
+                TitleViewPortrait(title: sGamesArchive)
                 
             } // ZStack
         } // Navigation view

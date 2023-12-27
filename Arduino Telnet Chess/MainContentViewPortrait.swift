@@ -11,7 +11,7 @@ import CoreData
 // Portrait main view components
 struct MainContentViewPortrait: View {
     // Manage the DestinationOptions for the navigation stack
-    @State private var navigationSelection: DestinationOptions?
+    @State private var navigationSelection: ToolbarDestinationOptions?
 
     var body: some View {
         // Navigation stack to manage toolbar navigation
@@ -21,16 +21,16 @@ struct MainContentViewPortrait: View {
                 ZStack {
                     // Hidden Navigation Links
                     ForEach([
-                        DestinationOptions.PlayView,
-                        DestinationOptions.GamesView,
-                        DestinationOptions.SetupView,
-                        DestinationOptions.HelpView,
-                        DestinationOptions.AboutView
+                        ToolbarDestinationOptions.toolbarPlayView,
+                        ToolbarDestinationOptions.toolbarGamesView,
+                        ToolbarDestinationOptions.toolbarSetupView,
+                        ToolbarDestinationOptions.toolbarHelpView,
+                        ToolbarDestinationOptions.toolbarAboutView
                     ], id: \.self) {
                         destination in
                         NavigationLink("", tag: destination,
                                        selection: $navigationSelection) {
-                            DestinationoptionsView(for: destination)
+                            ToolbarDestinationOptionsView(for: destination)
                         } // selection: $navigationSelection)
                     } // id: \.self)
                     // Background color
@@ -41,76 +41,57 @@ struct MainContentViewPortrait: View {
                     ShowLogoElement14Portrait()
                     VersionBuild()
                     // Page title
-                    MainTitleView(title: "Telnet Chess",
-                                  subTitle: "Arduino UNO R4 Edition")
+                    MainTitleView(title: sTitle,
+                                  subTitle: sSubTitle)
                 } // Navigation view
             } // View
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: {
-                        navigationSelection = .PlayView
-                    } ) {
-                        Text("Play")
-                            .foregroundColor(appColors["foreground"])
-                            .font(.headline)
-                    } // Play
+                    ToolbarButton(title: sPlay, action: {
+                        navigationSelection = .toolbarPlayView
+                    } )
                 } // ToolbarItem
                     
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: {
-                        navigationSelection = .GamesView
-                    } ) {
-                        Text("Games")
-                            .foregroundColor(appColors["foreground"])
-                            .font(.headline)
-                    }
+                    ToolbarButton(title: sGames, action: {
+                        navigationSelection = .toolbarGamesView
+                    } )
                 } // ToolbarItem
                     
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: {
-                        navigationSelection = .SetupView
-                    } ) {
-                        Text("Setup")
-                            .foregroundColor(appColors["foreground"])
-                            .font(.headline)
-                    }
+                    ToolbarButton(title: sSetup, action: {
+                        navigationSelection = .toolbarSetupView
+                    } )
                 } // ToolbarItem
                 
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: {
-                        navigationSelection = .HelpView
-                    } ) {
-                        Text("Help")
-                            .foregroundColor(appColors["foreground"])
-                            .font(.headline)
-                    }
+                    ToolbarButton(title: sHelp, action: {
+                        navigationSelection = .toolbarHelpView
+                    } )
                 } // ToolbarItem
                 
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: {
-                        navigationSelection = .AboutView
-                    } ) {
-                        Text("About")
-                            .foregroundColor(appColors["foreground"])
-                            .font(.headline)
-                    }
+                    ToolbarButton(title: sAbout, action: {
+                        navigationSelection = .toolbarAboutView
+                    } )
                 } // ToolbarItem
                 
                 } // toolbar
             } // Navigation Stack
         } // Body view
+    
     @ViewBuilder
-    private func DestinationoptionsView(for destination: DestinationOptions) -> some View {
+    private func ToolbarDestinationOptionsView(for destination: ToolbarDestinationOptions) -> some View {
         switch destination {
-        case .PlayView:
+        case .toolbarPlayView:
             PlayView()
-        case .GamesView:
+        case .toolbarGamesView:
             GamesView()
-        case .SetupView:
+        case .toolbarSetupView:
             SetupView()
-        case .HelpView:
+        case .toolbarHelpView:
             HelpView()
-        case .AboutView:
+        case .toolbarAboutView:
             AboutView()
         } // case
     } // View
@@ -118,5 +99,5 @@ struct MainContentViewPortrait: View {
 
 
 #Preview {
-    MainContentViewLandscape().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    MainContentViewPortrait().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }

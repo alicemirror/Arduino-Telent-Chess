@@ -23,10 +23,10 @@ struct SetupView: View {
             appColors["background"]
                 .ignoresSafeArea()
             // Page Title
-            TitleViewPortrait(title: "Setup")
+            TitleViewPortrait(title: sSetup)
                 ScrollView {
                     VStack {
-                        SetupTitleView(section: "Color Theme")
+                        SetupTitleView(section: sColortTheme)
                         SelectChessboardThemeView()
                     } // VStack
                 } // Scrollview

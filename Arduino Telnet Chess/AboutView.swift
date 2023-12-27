@@ -24,10 +24,7 @@ struct AboutView: View {
                 // Background color
                 appColors["background"]
                     .ignoresSafeArea()
-                // --------------------- Page title
                 TitleViewPortrait(title: "About")
-
-                // --------------------- Game board
 
                 
             } // ZStack
