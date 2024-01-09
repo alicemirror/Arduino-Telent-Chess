@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct SetupView: View {
+struct LandscapeSetupView: View {
     @Environment(\.managedObjectContext) private var viewContext
     
     @FetchRequest(
@@ -37,5 +37,5 @@ struct SetupView: View {
 } // Main content view
 
 #Preview {
-    SetupView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    PortraitSetupView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }

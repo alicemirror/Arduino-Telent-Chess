@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct GamesView: View {
+struct PortraitGamesView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
@@ -31,5 +31,5 @@ struct GamesView: View {
 } // Main content view
 
 #Preview {
-    GamesView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    LandscapeGamesView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }

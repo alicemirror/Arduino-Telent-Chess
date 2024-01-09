@@ -10,7 +10,7 @@ import CoreData
 
 // The full gameboard view. Over the gameboard, the button pieces
 // should be ckickable to set the position.
-struct PlayView: View {
+struct PortraitPlayView: View {
     
     @State private var selectedTiles: Set<Int> = []
     
@@ -73,5 +73,5 @@ struct PlayView: View {
 } // Game content view
 
 #Preview {
-    PlayView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    PortraitPlayView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }

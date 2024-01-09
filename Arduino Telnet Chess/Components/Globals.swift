@@ -56,7 +56,8 @@ let appColors: [String: Color] = [
         "selected": .purple,
         "sectionText": .white,
         "landscapeMenu": .teal,
-        "toolbarMenu": .white
+        "toolbarMenu": .white,
+        "scrollText": .white
     ]
 
 // Column name based on the index number

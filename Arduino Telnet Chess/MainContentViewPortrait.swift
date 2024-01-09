@@ -84,15 +84,15 @@ struct MainContentViewPortrait: View {
     private func ToolbarDestinationOptionsView(for destination: ToolbarDestinationOptions) -> some View {
         switch destination {
         case .toolbarPlayView:
-            PlayView()
+            PortraitPlayView()
         case .toolbarGamesView:
-            GamesView()
+            PortraitGamesView()
         case .toolbarSetupView:
-            SetupView()
+            PortraitSetupView()
         case .toolbarHelpView:
-            HelpView()
+            PortraitHelpView()
         case .toolbarAboutView:
-            AboutView()
+            PortraitAboutView()
         } // case
     } // View
 } // Main content view

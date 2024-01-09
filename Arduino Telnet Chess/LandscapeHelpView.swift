@@ -1,5 +1,5 @@
 //
-//  AboutView.swift
+//  HelpView.swift
 //  Arduino Telent chess
 //
 //  Created by Enrico Miglino on 29/11/23.
@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct AboutView: View {
+struct LandscapeHelpView: View {
     
     @Environment(\.managedObjectContext) private var viewContext
     
@@ -24,7 +24,7 @@ struct AboutView: View {
                 // Background color
                 appColors["background"]
                     .ignoresSafeArea()
-                TitleViewPortrait(title: "About")
+                TitleViewPortrait(title: "Help")
 
                 
             } // ZStack
@@ -33,5 +33,5 @@ struct AboutView: View {
 } // Main content view
 
 #Preview {
-    AboutView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    PortraitHelpView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }
