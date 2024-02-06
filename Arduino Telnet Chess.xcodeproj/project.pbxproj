@@ -1,0 +1,746 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9053A662B2B96AF00667FE3 /* PortraitGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9053A652B2B96AF00667FE3 /* PortraitGamesView.swift */; };
+		D90A43D42B0961C400CFEFA6 /* Arduino_Telnet_chessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90A43D32B0961C400CFEFA6 /* Arduino_Telnet_chessApp.swift */; };
+		D90A43D62B0961C400CFEFA6 /* MainContentViewLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90A43D52B0961C400CFEFA6 /* MainContentViewLandscape.swift */; };
+		D90A43D82B0961C500CFEFA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90A43D72B0961C500CFEFA6 /* Assets.xcassets */; };
+		D90A43DB2B0961C500CFEFA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90A43DA2B0961C500CFEFA6 /* Preview Assets.xcassets */; };
+		D90A43DD2B0961C500CFEFA6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90A43DC2B0961C500CFEFA6 /* Persistence.swift */; };
+		D90A43E02B0961C500CFEFA6 /* Arduino_Telent_chess.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D90A43DE2B0961C500CFEFA6 /* Arduino_Telent_chess.xcdatamodeld */; };
+		D92270062B3C7A9A000F70D7 /* LocalizableStringe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92270052B3C7A9A000F70D7 /* LocalizableStringe.swift */; };
+		D922700A2B3C818D000F70D7 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = D92270092B3C818D000F70D7 /* Localizable.xcstrings */; };
+		D927ADEA2B2D083300008D67 /* MainTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D927ADE92B2D083300008D67 /* MainTitleView.swift */; };
+		D927ADEC2B2D0A0800008D67 /* ShowLogos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D927ADEB2B2D0A0800008D67 /* ShowLogos.swift */; };
+		D9331D8D2B1D33A0002634DB /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9331D8C2B1D33A0002634DB /* GlobalFunctions.swift */; };
+		D9331D8F2B1D33EE002634DB /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9331D8E2B1D33EE002634DB /* Globals.swift */; };
+		D9331D912B1D3466002634DB /* GameFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9331D902B1D3466002634DB /* GameFunctions.swift */; };
+		D9331D932B1E6E40002634DB /* BoardSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9331D922B1E6E40002634DB /* BoardSquare.swift */; };
+		D9331D952B1E7747002634DB /* GamePiecesPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9331D942B1E7747002634DB /* GamePiecesPosition.swift */; };
+		D93369962B2A58D1007EB862 /* BoardSquareTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93369952B2A58D1007EB862 /* BoardSquareTouch.swift */; };
+		D94749C92B6BE68700D1CD62 /* OrientationLayoutSynch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94749C82B6BE68700D1CD62 /* OrientationLayoutSynch.swift */; };
+		D94749CB2B72169100D1CD62 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94749CA2B72169100D1CD62 /* PlayView.swift */; };
+		D96178252B1A871D00120EAE /* VrersionBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96178242B1A871D00120EAE /* VrersionBuild.swift */; };
+		D961E7012B3742E200F4EE19 /* SetupTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961E7002B3742E200F4EE19 /* SetupTitleView.swift */; };
+		D961E7032B37942E00F4EE19 /* UIOrientationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961E7022B37942E00F4EE19 /* UIOrientationInfoView.swift */; };
+		D961E7052B37A48F00F4EE19 /* MainContentViewPortrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961E7042B37A48F00F4EE19 /* MainContentViewPortrait.swift */; };
+		D961E7072B37A4EE00F4EE19 /* ToolbarDestinationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961E7062B37A4EE00F4EE19 /* ToolbarDestinationOptions.swift */; };
+		D96A69452B0AAD7F00AB7F2E /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A69442B0AAD7F00AB7F2E /* Buttons.swift */; };
+		D9C6287C2B17F3B300E1AA60 /* PortraitPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C6287B2B17F3B300E1AA60 /* PortraitPlayView.swift */; };
+		D9C6287E2B192E2400E1AA60 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C6287D2B192E2400E1AA60 /* TitleView.swift */; };
+		D9C628812B1933D300E1AA60 /* PortraitSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C628802B1933D300E1AA60 /* PortraitSetupView.swift */; };
+		D9C628832B19341200E1AA60 /* PortraitHelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C628822B19341200E1AA60 /* PortraitHelpView.swift */; };
+		D9C628852B19344B00E1AA60 /* PortraitAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C628842B19344B00E1AA60 /* PortraitAboutView.swift */; };
+		D9C628872B1943E400E1AA60 /* SelectChessboardThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C628862B1943E400E1AA60 /* SelectChessboardThemeView.swift */; };
+		D9D6F2432B4DDF5600CE5F27 /* LandscapePlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D6F2422B4DDF5600CE5F27 /* LandscapePlayView.swift */; };
+		D9D6F2452B4DDF8800CE5F27 /* LandscapeSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D6F2442B4DDF8800CE5F27 /* LandscapeSetupView.swift */; };
+		D9D6F2492B4DE02900CE5F27 /* LandscapeGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D6F2482B4DE02900CE5F27 /* LandscapeGamesView.swift */; };
+		D9D6F24B2B4DE05600CE5F27 /* LandscapeAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D6F24A2B4DE05600CE5F27 /* LandscapeAboutView.swift */; };
+		D9D6F24D2B4DE08500CE5F27 /* LandscapeHelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D6F24C2B4DE08500CE5F27 /* LandscapeHelpView.swift */; };
+		D9D6F24F2B4DE10C00CE5F27 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D6F24E2B4DE10C00CE5F27 /* Texts.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D90A43E62B0961C500CFEFA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D90A43C82B0961C400CFEFA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D90A43CF2B0961C400CFEFA6;
+			remoteInfo = "Arduino Telent chess";
+		};
+		D90A43F02B0961C500CFEFA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D90A43C82B0961C400CFEFA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D90A43CF2B0961C400CFEFA6;
+			remoteInfo = "Arduino Telent chess";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D9053A652B2B96AF00667FE3 /* PortraitGamesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitGamesView.swift; sourceTree = "<group>"; };
+		D90A43D02B0961C400CFEFA6 /* Arduino Telnet Chess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arduino Telnet Chess.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90A43D32B0961C400CFEFA6 /* Arduino_Telnet_chessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arduino_Telnet_chessApp.swift; sourceTree = "<group>"; };
+		D90A43D52B0961C400CFEFA6 /* MainContentViewLandscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentViewLandscape.swift; sourceTree = "<group>"; };
+		D90A43D72B0961C500CFEFA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D90A43DA2B0961C500CFEFA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D90A43DC2B0961C500CFEFA6 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		D90A43DF2B0961C500CFEFA6 /* Arduino_Telent_chess.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Arduino_Telent_chess.xcdatamodel; sourceTree = "<group>"; };
+		D90A43E52B0961C500CFEFA6 /* Arduino Telnet ChessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arduino Telnet ChessTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90A43EF2B0961C500CFEFA6 /* Arduino Telnet ChessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Arduino Telnet ChessUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D92270052B3C7A9A000F70D7 /* LocalizableStringe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableStringe.swift; sourceTree = "<group>"; };
+		D92270092B3C818D000F70D7 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = Localizable.xcstrings; path = "Arduino Telnet Chess/Components/Arduino Telnet Chess Localizations/Localizable.xcstrings"; sourceTree = "<group>"; };
+		D922700B2B3C84A8000F70D7 /* Arduino-Telnet-Chess-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Arduino-Telnet-Chess-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D927ADE92B2D083300008D67 /* MainTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTitleView.swift; sourceTree = "<group>"; };
+		D927ADEB2B2D0A0800008D67 /* ShowLogos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowLogos.swift; sourceTree = "<group>"; };
+		D9331D8C2B1D33A0002634DB /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		D9331D8E2B1D33EE002634DB /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		D9331D902B1D3466002634DB /* GameFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFunctions.swift; sourceTree = "<group>"; };
+		D9331D922B1E6E40002634DB /* BoardSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardSquare.swift; sourceTree = "<group>"; };
+		D9331D942B1E7747002634DB /* GamePiecesPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePiecesPosition.swift; sourceTree = "<group>"; };
+		D93369952B2A58D1007EB862 /* BoardSquareTouch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardSquareTouch.swift; sourceTree = "<group>"; };
+		D94749C82B6BE68700D1CD62 /* OrientationLayoutSynch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationLayoutSynch.swift; sourceTree = "<group>"; };
+		D94749CA2B72169100D1CD62 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
+		D96178242B1A871D00120EAE /* VrersionBuild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VrersionBuild.swift; sourceTree = "<group>"; };
+		D961E7002B3742E200F4EE19 /* SetupTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupTitleView.swift; sourceTree = "<group>"; };
+		D961E7022B37942E00F4EE19 /* UIOrientationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIOrientationInfoView.swift; sourceTree = "<group>"; };
+		D961E7042B37A48F00F4EE19 /* MainContentViewPortrait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContentViewPortrait.swift; sourceTree = "<group>"; };
+		D961E7062B37A4EE00F4EE19 /* ToolbarDestinationOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarDestinationOptions.swift; sourceTree = "<group>"; };
+		D96A69442B0AAD7F00AB7F2E /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		D9C6287B2B17F3B300E1AA60 /* PortraitPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitPlayView.swift; sourceTree = "<group>"; };
+		D9C6287D2B192E2400E1AA60 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		D9C628802B1933D300E1AA60 /* PortraitSetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitSetupView.swift; sourceTree = "<group>"; };
+		D9C628822B19341200E1AA60 /* PortraitHelpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitHelpView.swift; sourceTree = "<group>"; };
+		D9C628842B19344B00E1AA60 /* PortraitAboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitAboutView.swift; sourceTree = "<group>"; };
+		D9C628862B1943E400E1AA60 /* SelectChessboardThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectChessboardThemeView.swift; sourceTree = "<group>"; };
+		D9D6F2422B4DDF5600CE5F27 /* LandscapePlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapePlayView.swift; sourceTree = "<group>"; };
+		D9D6F2442B4DDF8800CE5F27 /* LandscapeSetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapeSetupView.swift; sourceTree = "<group>"; };
+		D9D6F2482B4DE02900CE5F27 /* LandscapeGamesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapeGamesView.swift; sourceTree = "<group>"; };
+		D9D6F24A2B4DE05600CE5F27 /* LandscapeAboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapeAboutView.swift; sourceTree = "<group>"; };
+		D9D6F24C2B4DE08500CE5F27 /* LandscapeHelpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapeHelpView.swift; sourceTree = "<group>"; };
+		D9D6F24E2B4DE10C00CE5F27 /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D90A43CD2B0961C400CFEFA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90A43E22B0961C500CFEFA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90A43EC2B0961C500CFEFA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D90A43C72B0961C400CFEFA6 = {
+			isa = PBXGroup;
+			children = (
+				D92270092B3C818D000F70D7 /* Localizable.xcstrings */,
+				D90A43D22B0961C400CFEFA6 /* Arduino Telnet Chess */,
+				D90A43D12B0961C400CFEFA6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D90A43D12B0961C400CFEFA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D90A43D02B0961C400CFEFA6 /* Arduino Telnet Chess.app */,
+				D90A43E52B0961C500CFEFA6 /* Arduino Telnet ChessTests.xctest */,
+				D90A43EF2B0961C500CFEFA6 /* Arduino Telnet ChessUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D90A43D22B0961C400CFEFA6 /* Arduino Telnet Chess */ = {
+			isa = PBXGroup;
+			children = (
+				D922700B2B3C84A8000F70D7 /* Arduino-Telnet-Chess-Info.plist */,
+				D96A69432B0AAD4C00AB7F2E /* Components */,
+				D90A43D32B0961C400CFEFA6 /* Arduino_Telnet_chessApp.swift */,
+				D90A43D52B0961C400CFEFA6 /* MainContentViewLandscape.swift */,
+				D961E7042B37A48F00F4EE19 /* MainContentViewPortrait.swift */,
+				D90A43D72B0961C500CFEFA6 /* Assets.xcassets */,
+				D90A43DC2B0961C500CFEFA6 /* Persistence.swift */,
+				D90A43DE2B0961C500CFEFA6 /* Arduino_Telent_chess.xcdatamodeld */,
+				D90A43D92B0961C500CFEFA6 /* Preview Content */,
+				D9C6287F2B19335E00E1AA60 /* AppViews */,
+			);
+			path = "Arduino Telnet Chess";
+			sourceTree = "<group>";
+		};
+		D90A43D92B0961C500CFEFA6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D90A43DA2B0961C500CFEFA6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D96A69432B0AAD4C00AB7F2E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D9C628862B1943E400E1AA60 /* SelectChessboardThemeView.swift */,
+				D96A69442B0AAD7F00AB7F2E /* Buttons.swift */,
+				D9C6287D2B192E2400E1AA60 /* TitleView.swift */,
+				D961E7002B3742E200F4EE19 /* SetupTitleView.swift */,
+				D927ADE92B2D083300008D67 /* MainTitleView.swift */,
+				D927ADEB2B2D0A0800008D67 /* ShowLogos.swift */,
+				D96178242B1A871D00120EAE /* VrersionBuild.swift */,
+				D9331D8C2B1D33A0002634DB /* GlobalFunctions.swift */,
+				D9331D8E2B1D33EE002634DB /* Globals.swift */,
+				D9331D902B1D3466002634DB /* GameFunctions.swift */,
+				D9331D922B1E6E40002634DB /* BoardSquare.swift */,
+				D9331D942B1E7747002634DB /* GamePiecesPosition.swift */,
+				D93369952B2A58D1007EB862 /* BoardSquareTouch.swift */,
+				D961E7022B37942E00F4EE19 /* UIOrientationInfoView.swift */,
+				D961E7062B37A4EE00F4EE19 /* ToolbarDestinationOptions.swift */,
+				D92270052B3C7A9A000F70D7 /* LocalizableStringe.swift */,
+				D9D6F24E2B4DE10C00CE5F27 /* Texts.swift */,
+				D94749C82B6BE68700D1CD62 /* OrientationLayoutSynch.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D9C6287F2B19335E00E1AA60 /* AppViews */ = {
+			isa = PBXGroup;
+			children = (
+				D9C6287B2B17F3B300E1AA60 /* PortraitPlayView.swift */,
+				D9D6F2422B4DDF5600CE5F27 /* LandscapePlayView.swift */,
+				D9C628802B1933D300E1AA60 /* PortraitSetupView.swift */,
+				D9D6F2442B4DDF8800CE5F27 /* LandscapeSetupView.swift */,
+				D9053A652B2B96AF00667FE3 /* PortraitGamesView.swift */,
+				D9D6F2482B4DE02900CE5F27 /* LandscapeGamesView.swift */,
+				D9C628842B19344B00E1AA60 /* PortraitAboutView.swift */,
+				D9D6F24A2B4DE05600CE5F27 /* LandscapeAboutView.swift */,
+				D9C628822B19341200E1AA60 /* PortraitHelpView.swift */,
+				D9D6F24C2B4DE08500CE5F27 /* LandscapeHelpView.swift */,
+				D94749CA2B72169100D1CD62 /* PlayView.swift */,
+			);
+			name = AppViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D90A43CF2B0961C400CFEFA6 /* Arduino Telnet Chess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D90A43F92B0961C500CFEFA6 /* Build configuration list for PBXNativeTarget "Arduino Telnet Chess" */;
+			buildPhases = (
+				D90A43CC2B0961C400CFEFA6 /* Sources */,
+				D90A43CD2B0961C400CFEFA6 /* Frameworks */,
+				D90A43CE2B0961C400CFEFA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Arduino Telnet Chess";
+			productName = "Arduino Telent chess";
+			productReference = D90A43D02B0961C400CFEFA6 /* Arduino Telnet Chess.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D90A43E42B0961C500CFEFA6 /* Arduino Telnet ChessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D90A43FC2B0961C500CFEFA6 /* Build configuration list for PBXNativeTarget "Arduino Telnet ChessTests" */;
+			buildPhases = (
+				D90A43E12B0961C500CFEFA6 /* Sources */,
+				D90A43E22B0961C500CFEFA6 /* Frameworks */,
+				D90A43E32B0961C500CFEFA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D90A43E72B0961C500CFEFA6 /* PBXTargetDependency */,
+			);
+			name = "Arduino Telnet ChessTests";
+			productName = "Arduino Telent chessTests";
+			productReference = D90A43E52B0961C500CFEFA6 /* Arduino Telnet ChessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D90A43EE2B0961C500CFEFA6 /* Arduino Telnet ChessUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D90A43FF2B0961C500CFEFA6 /* Build configuration list for PBXNativeTarget "Arduino Telnet ChessUITests" */;
+			buildPhases = (
+				D90A43EB2B0961C500CFEFA6 /* Sources */,
+				D90A43EC2B0961C500CFEFA6 /* Frameworks */,
+				D90A43ED2B0961C500CFEFA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D90A43F12B0961C500CFEFA6 /* PBXTargetDependency */,
+			);
+			name = "Arduino Telnet ChessUITests";
+			productName = "Arduino Telent chessUITests";
+			productReference = D90A43EF2B0961C500CFEFA6 /* Arduino Telnet ChessUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D90A43C82B0961C400CFEFA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = "Enrico Miglino";
+				TargetAttributes = {
+					D90A43CF2B0961C400CFEFA6 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					D90A43E42B0961C500CFEFA6 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = D90A43CF2B0961C400CFEFA6;
+					};
+					D90A43EE2B0961C500CFEFA6 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = D90A43CF2B0961C400CFEFA6;
+					};
+				};
+			};
+			buildConfigurationList = D90A43CB2B0961C400CFEFA6 /* Build configuration list for PBXProject "Arduino Telnet Chess" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				it,
+				nl,
+				es,
+			);
+			mainGroup = D90A43C72B0961C400CFEFA6;
+			productRefGroup = D90A43D12B0961C400CFEFA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D90A43CF2B0961C400CFEFA6 /* Arduino Telnet Chess */,
+				D90A43E42B0961C500CFEFA6 /* Arduino Telnet ChessTests */,
+				D90A43EE2B0961C500CFEFA6 /* Arduino Telnet ChessUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D90A43CE2B0961C400CFEFA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90A43DB2B0961C500CFEFA6 /* Preview Assets.xcassets in Resources */,
+				D90A43D82B0961C500CFEFA6 /* Assets.xcassets in Resources */,
+				D922700A2B3C818D000F70D7 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90A43E32B0961C500CFEFA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90A43ED2B0961C500CFEFA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D90A43CC2B0961C400CFEFA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D961E7052B37A48F00F4EE19 /* MainContentViewPortrait.swift in Sources */,
+				D9D6F2492B4DE02900CE5F27 /* LandscapeGamesView.swift in Sources */,
+				D9D6F24B2B4DE05600CE5F27 /* LandscapeAboutView.swift in Sources */,
+				D9331D932B1E6E40002634DB /* BoardSquare.swift in Sources */,
+				D94749CB2B72169100D1CD62 /* PlayView.swift in Sources */,
+				D9D6F24D2B4DE08500CE5F27 /* LandscapeHelpView.swift in Sources */,
+				D9D6F2432B4DDF5600CE5F27 /* LandscapePlayView.swift in Sources */,
+				D96A69452B0AAD7F00AB7F2E /* Buttons.swift in Sources */,
+				D961E7072B37A4EE00F4EE19 /* ToolbarDestinationOptions.swift in Sources */,
+				D9C6287E2B192E2400E1AA60 /* TitleView.swift in Sources */,
+				D9D6F2452B4DDF8800CE5F27 /* LandscapeSetupView.swift in Sources */,
+				D92270062B3C7A9A000F70D7 /* LocalizableStringe.swift in Sources */,
+				D93369962B2A58D1007EB862 /* BoardSquareTouch.swift in Sources */,
+				D90A43DD2B0961C500CFEFA6 /* Persistence.swift in Sources */,
+				D90A43E02B0961C500CFEFA6 /* Arduino_Telent_chess.xcdatamodeld in Sources */,
+				D9331D952B1E7747002634DB /* GamePiecesPosition.swift in Sources */,
+				D9C628852B19344B00E1AA60 /* PortraitAboutView.swift in Sources */,
+				D9331D912B1D3466002634DB /* GameFunctions.swift in Sources */,
+				D9C628832B19341200E1AA60 /* PortraitHelpView.swift in Sources */,
+				D927ADEC2B2D0A0800008D67 /* ShowLogos.swift in Sources */,
+				D96178252B1A871D00120EAE /* VrersionBuild.swift in Sources */,
+				D90A43D62B0961C400CFEFA6 /* MainContentViewLandscape.swift in Sources */,
+				D9C6287C2B17F3B300E1AA60 /* PortraitPlayView.swift in Sources */,
+				D9C628812B1933D300E1AA60 /* PortraitSetupView.swift in Sources */,
+				D94749C92B6BE68700D1CD62 /* OrientationLayoutSynch.swift in Sources */,
+				D9053A662B2B96AF00667FE3 /* PortraitGamesView.swift in Sources */,
+				D90A43D42B0961C400CFEFA6 /* Arduino_Telnet_chessApp.swift in Sources */,
+				D927ADEA2B2D083300008D67 /* MainTitleView.swift in Sources */,
+				D9C628872B1943E400E1AA60 /* SelectChessboardThemeView.swift in Sources */,
+				D961E7012B3742E200F4EE19 /* SetupTitleView.swift in Sources */,
+				D961E7032B37942E00F4EE19 /* UIOrientationInfoView.swift in Sources */,
+				D9331D8F2B1D33EE002634DB /* Globals.swift in Sources */,
+				D9D6F24F2B4DE10C00CE5F27 /* Texts.swift in Sources */,
+				D9331D8D2B1D33A0002634DB /* GlobalFunctions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90A43E12B0961C500CFEFA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90A43EB2B0961C500CFEFA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D90A43E72B0961C500CFEFA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D90A43CF2B0961C400CFEFA6 /* Arduino Telnet Chess */;
+			targetProxy = D90A43E62B0961C500CFEFA6 /* PBXContainerItemProxy */;
+		};
+		D90A43F12B0961C500CFEFA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D90A43CF2B0961C400CFEFA6 /* Arduino Telnet Chess */;
+			targetProxy = D90A43F02B0961C500CFEFA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D90A43F72B0961C500CFEFA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D90A43F82B0961C500CFEFA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D90A43FA2B0961C500CFEFA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_ASSET_PATHS = "\"Arduino Telnet Chess/Preview Content\"";
+				DEVELOPMENT_TEAM = 6FJ7HB3N3G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Arduino-Telnet-Chess-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.board-games";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.enricomiglino.arduino-telnet-chess.Arduino-Telnet-Chess";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D90A43FB2B0961C500CFEFA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_ASSET_PATHS = "\"Arduino Telnet Chess/Preview Content\"";
+				DEVELOPMENT_TEAM = 6FJ7HB3N3G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Arduino-Telnet-Chess-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.board-games";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.enricomiglino.arduino-telnet-chess.Arduino-Telnet-Chess";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D90A43FD2B0961C500CFEFA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FJ7HB3N3G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.enricomiglino.arduino-telnet-chess.Arduino-Telnet-ChessTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arduino Telnet Chess.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Arduino Telnet Chess";
+			};
+			name = Debug;
+		};
+		D90A43FE2B0961C500CFEFA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FJ7HB3N3G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.enricomiglino.arduino-telnet-chess.Arduino-Telnet-ChessTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Arduino Telnet Chess.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Arduino Telnet Chess";
+			};
+			name = Release;
+		};
+		D90A44002B0961C500CFEFA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FJ7HB3N3G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.enricomiglino.arduino-telnet-chess.Arduino-Telnet-ChessUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Arduino Telent chess";
+			};
+			name = Debug;
+		};
+		D90A44012B0961C500CFEFA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6FJ7HB3N3G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.enricomiglino.arduino-telnet-chess.Arduino-Telnet-ChessUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Arduino Telent chess";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D90A43CB2B0961C400CFEFA6 /* Build configuration list for PBXProject "Arduino Telnet Chess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90A43F72B0961C500CFEFA6 /* Debug */,
+				D90A43F82B0961C500CFEFA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D90A43F92B0961C500CFEFA6 /* Build configuration list for PBXNativeTarget "Arduino Telnet Chess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90A43FA2B0961C500CFEFA6 /* Debug */,
+				D90A43FB2B0961C500CFEFA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D90A43FC2B0961C500CFEFA6 /* Build configuration list for PBXNativeTarget "Arduino Telnet ChessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90A43FD2B0961C500CFEFA6 /* Debug */,
+				D90A43FE2B0961C500CFEFA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D90A43FF2B0961C500CFEFA6 /* Build configuration list for PBXNativeTarget "Arduino Telnet ChessUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90A44002B0961C500CFEFA6 /* Debug */,
+				D90A44012B0961C500CFEFA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D90A43DE2B0961C500CFEFA6 /* Arduino_Telent_chess.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D90A43DF2B0961C500CFEFA6 /* Arduino_Telent_chess.xcdatamodel */,
+			);
+			currentVersion = D90A43DF2B0961C500CFEFA6 /* Arduino_Telent_chess.xcdatamodel */;
+			path = Arduino_Telent_chess.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D90A43C82B0961C400CFEFA6 /* Project object */;
+}
