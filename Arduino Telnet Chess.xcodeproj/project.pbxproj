@@ -24,7 +24,6 @@
 		D9331D932B1E6E40002634DB /* BoardSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9331D922B1E6E40002634DB /* BoardSquare.swift */; };
 		D9331D952B1E7747002634DB /* GamePiecesPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9331D942B1E7747002634DB /* GamePiecesPosition.swift */; };
 		D93369962B2A58D1007EB862 /* BoardSquareTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93369952B2A58D1007EB862 /* BoardSquareTouch.swift */; };
-		D94749C92B6BE68700D1CD62 /* OrientationLayoutSynch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94749C82B6BE68700D1CD62 /* OrientationLayoutSynch.swift */; };
 		D94749CB2B72169100D1CD62 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94749CA2B72169100D1CD62 /* PlayView.swift */; };
 		D96178252B1A871D00120EAE /* VrersionBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96178242B1A871D00120EAE /* VrersionBuild.swift */; };
 		D961E7012B3742E200F4EE19 /* SetupTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961E7002B3742E200F4EE19 /* SetupTitleView.swift */; };
@@ -32,6 +31,10 @@
 		D961E7052B37A48F00F4EE19 /* MainContentViewPortrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961E7042B37A48F00F4EE19 /* MainContentViewPortrait.swift */; };
 		D961E7072B37A4EE00F4EE19 /* ToolbarDestinationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961E7062B37A4EE00F4EE19 /* ToolbarDestinationOptions.swift */; };
 		D96A69452B0AAD7F00AB7F2E /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A69442B0AAD7F00AB7F2E /* Buttons.swift */; };
+		D9B3EB252B72CF3E00FDD292 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3EB242B72CF3E00FDD292 /* SetupView.swift */; };
+		D9B3EB272B72CFFA00FDD292 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3EB262B72CFFA00FDD292 /* GamesView.swift */; };
+		D9B3EB292B72D00C00FDD292 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3EB282B72D00C00FDD292 /* AboutView.swift */; };
+		D9B3EB2B2B72D02300FDD292 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3EB2A2B72D02300FDD292 /* HelpView.swift */; };
 		D9C6287C2B17F3B300E1AA60 /* PortraitPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C6287B2B17F3B300E1AA60 /* PortraitPlayView.swift */; };
 		D9C6287E2B192E2400E1AA60 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C6287D2B192E2400E1AA60 /* TitleView.swift */; };
 		D9C628812B1933D300E1AA60 /* PortraitSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C628802B1933D300E1AA60 /* PortraitSetupView.swift */; };
@@ -85,7 +88,6 @@
 		D9331D922B1E6E40002634DB /* BoardSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardSquare.swift; sourceTree = "<group>"; };
 		D9331D942B1E7747002634DB /* GamePiecesPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePiecesPosition.swift; sourceTree = "<group>"; };
 		D93369952B2A58D1007EB862 /* BoardSquareTouch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardSquareTouch.swift; sourceTree = "<group>"; };
-		D94749C82B6BE68700D1CD62 /* OrientationLayoutSynch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationLayoutSynch.swift; sourceTree = "<group>"; };
 		D94749CA2B72169100D1CD62 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
 		D96178242B1A871D00120EAE /* VrersionBuild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VrersionBuild.swift; sourceTree = "<group>"; };
 		D961E7002B3742E200F4EE19 /* SetupTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupTitleView.swift; sourceTree = "<group>"; };
@@ -93,6 +95,10 @@
 		D961E7042B37A48F00F4EE19 /* MainContentViewPortrait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContentViewPortrait.swift; sourceTree = "<group>"; };
 		D961E7062B37A4EE00F4EE19 /* ToolbarDestinationOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarDestinationOptions.swift; sourceTree = "<group>"; };
 		D96A69442B0AAD7F00AB7F2E /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		D9B3EB242B72CF3E00FDD292 /* SetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		D9B3EB262B72CFFA00FDD292 /* GamesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
+		D9B3EB282B72D00C00FDD292 /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		D9B3EB2A2B72D02300FDD292 /* HelpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		D9C6287B2B17F3B300E1AA60 /* PortraitPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitPlayView.swift; sourceTree = "<group>"; };
 		D9C6287D2B192E2400E1AA60 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		D9C628802B1933D300E1AA60 /* PortraitSetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitSetupView.swift; sourceTree = "<group>"; };
@@ -196,7 +202,6 @@
 				D961E7062B37A4EE00F4EE19 /* ToolbarDestinationOptions.swift */,
 				D92270052B3C7A9A000F70D7 /* LocalizableStringe.swift */,
 				D9D6F24E2B4DE10C00CE5F27 /* Texts.swift */,
-				D94749C82B6BE68700D1CD62 /* OrientationLayoutSynch.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -215,6 +220,10 @@
 				D9C628822B19341200E1AA60 /* PortraitHelpView.swift */,
 				D9D6F24C2B4DE08500CE5F27 /* LandscapeHelpView.swift */,
 				D94749CA2B72169100D1CD62 /* PlayView.swift */,
+				D9B3EB262B72CFFA00FDD292 /* GamesView.swift */,
+				D9B3EB282B72D00C00FDD292 /* AboutView.swift */,
+				D9B3EB2A2B72D02300FDD292 /* HelpView.swift */,
+				D9B3EB242B72CF3E00FDD292 /* SetupView.swift */,
 			);
 			name = AppViews;
 			sourceTree = "<group>";
@@ -356,7 +365,9 @@
 			files = (
 				D961E7052B37A48F00F4EE19 /* MainContentViewPortrait.swift in Sources */,
 				D9D6F2492B4DE02900CE5F27 /* LandscapeGamesView.swift in Sources */,
+				D9B3EB272B72CFFA00FDD292 /* GamesView.swift in Sources */,
 				D9D6F24B2B4DE05600CE5F27 /* LandscapeAboutView.swift in Sources */,
+				D9B3EB292B72D00C00FDD292 /* AboutView.swift in Sources */,
 				D9331D932B1E6E40002634DB /* BoardSquare.swift in Sources */,
 				D94749CB2B72169100D1CD62 /* PlayView.swift in Sources */,
 				D9D6F24D2B4DE08500CE5F27 /* LandscapeHelpView.swift in Sources */,
@@ -376,9 +387,10 @@
 				D927ADEC2B2D0A0800008D67 /* ShowLogos.swift in Sources */,
 				D96178252B1A871D00120EAE /* VrersionBuild.swift in Sources */,
 				D90A43D62B0961C400CFEFA6 /* MainContentViewLandscape.swift in Sources */,
+				D9B3EB252B72CF3E00FDD292 /* SetupView.swift in Sources */,
 				D9C6287C2B17F3B300E1AA60 /* PortraitPlayView.swift in Sources */,
 				D9C628812B1933D300E1AA60 /* PortraitSetupView.swift in Sources */,
-				D94749C92B6BE68700D1CD62 /* OrientationLayoutSynch.swift in Sources */,
+				D9B3EB2B2B72D02300FDD292 /* HelpView.swift in Sources */,
 				D9053A662B2B96AF00667FE3 /* PortraitGamesView.swift in Sources */,
 				D90A43D42B0961C400CFEFA6 /* Arduino_Telnet_chessApp.swift in Sources */,
 				D927ADEA2B2D083300008D67 /* MainTitleView.swift in Sources */,
@@ -547,7 +559,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"Arduino Telnet Chess/Preview Content\"";
 				DEVELOPMENT_TEAM = 6FJ7HB3N3G;
 				ENABLE_PREVIEWS = YES;
@@ -583,7 +595,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"Arduino Telnet Chess/Preview Content\"";
 				DEVELOPMENT_TEAM = 6FJ7HB3N3G;
 				ENABLE_PREVIEWS = YES;

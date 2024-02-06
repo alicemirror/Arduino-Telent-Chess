@@ -19,10 +19,10 @@ struct LandscapePlayView: View {
         NavigationView {
             ZStack {
                 // Background color
-                appColors["background"]
-                    .ignoresSafeArea()
+//                appColors["background"]
+//                    .ignoresSafeArea()
                 // Page title
-                TitleViewPortrait(title: sPlayTitle)
+                TitleViewLandscape(title: sPlayTitle)
 
                 // Get the screen geometry to calculate the single square size and the 8x8
                 // chessboard size
@@ -33,8 +33,8 @@ struct LandscapePlayView: View {
                             BoardSquare(squareBoardSize: squareSize)
                         } // Loop on all the squares
                     } // LazyHGrid
-                    .position(CGPoint(x: geometry.size.width / 2,
-                                      y: geometry.size.height / 2) )
+                    .position(CGPoint(x: geometry.size.width / 1.4,
+                                      y: geometry.size.height / 1.9) )
 
                     // Position the pieces (game start)
                     LazyHGrid(rows: rowsPieces, spacing: spacingGameBoardSquares, pinnedViews: [], content: {
@@ -43,8 +43,8 @@ struct LandscapePlayView: View {
                             GamePiecePosition(pieceBoardSize: pieceSize, piece:         gamePiecesPosition[boardIndex] )
                         } // Loop on all the boards
                     }) // LazyHGrid
-                    .position(CGPoint(x: geometry.size.width / 2,
-                                      y: geometry.size.height / 2) )
+                    .position(CGPoint(x: geometry.size.width / 1.4,
+                                      y: geometry.size.height / 1.9) )
 
                     // Draw the touch sensitive areas corresponding to the
                     // squares
@@ -64,14 +64,21 @@ struct LandscapePlayView: View {
                                 } // onTapGesture
                         } // Loop on all the squares
                     } // LazyHGrid
-                    .position(CGPoint(x: geometry.size.width / 2,
-                                      y: geometry.size.height / 2) )
+                    .position(CGPoint(x: geometry.size.width / 1.4,
+                                      y: geometry.size.height / 1.9) )
                 } // GeometryReader
             } // ZStack
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(
+                Image("FunFacts")
+                    .resizable() // Make the image resizable
+                    .aspectRatio(contentMode: .fill) // Stretch to fill the view
+                    .edgesIgnoringSafeArea(.all) // Covers the full screen
+            )
         } // Navigation view
     } // View
 } // Game content view
 
 #Preview {
-    PortraitPlayView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    LandscapePlayView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }

@@ -73,15 +73,15 @@ struct MainContentViewLandscape: View {
     private func CustomDestinationOptionsView(for destination: CustomDestinationOptions) -> some View {
         switch destination {
         case .playView:
-            PortraitPlayView()
+            PlayView()
         case .gamesView:
-            PortraitGamesView()
+            GamesView()
         case .setupView:
-            PortraitSetupView()
+            SetupView()
         case .helpView:
-            PortraitHelpView()
+            HelpView()
         case .aboutView:
-            PortraitAboutView()
+            AboutView()
         } // case
     } // DestinationOptionsView
     

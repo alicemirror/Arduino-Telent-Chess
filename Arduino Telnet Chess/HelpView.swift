@@ -1,5 +1,5 @@
 //
-//  PlayView.swift
+//  HelpView.swift
 //  Arduino Telnet Chess
 //
 //  Created by Enrico Miglino on 6/2/24.
@@ -8,17 +8,17 @@
 
 import SwiftUI
 
-struct PlayView: View {
+struct HelpView: View {
     var body: some View {
         if UIDevice.current.orientation.isPortrait {
             // Vertical Layout
-            PortraitPlayView()
+            PortraitHelpView()
         } else {
-            LandscapePlayView()
+            LandscapeHelpView()
         }
     }
 }
 
 //#Preview {
-//    PlayView()
+//    HelpView()
 //}

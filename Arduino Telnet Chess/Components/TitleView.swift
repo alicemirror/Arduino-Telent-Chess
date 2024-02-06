@@ -47,7 +47,7 @@ struct TitleViewLandscape: View {
         GeometryReader {
             geometry in
             Text(title)
-                .position(x: geometry.size.width / 6.5, y: (geometry.size.height / 18) - 20)
+                .position(x: geometry.size.width / 6.5, y: (geometry.size.height / 18) - 5)
                 .font(.custom("San Francisco (SF Pro Text)", size: 32))
                 .fontWeight(.bold)
                 .foregroundColor(appColors["titleText"])

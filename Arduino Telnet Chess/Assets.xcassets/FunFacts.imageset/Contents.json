@@ -1,16 +1,18 @@
 {
   "images" : [
     {
-      "filename" : "FunFacts.jpg",
-      "idiom" : "universal",
+      "filename" : "FunFacts 2.jpg",
+      "idiom" : "iphone",
       "scale" : "1x"
     },
     {
-      "idiom" : "universal",
+      "filename" : "FunFacts.jpg",
+      "idiom" : "iphone",
       "scale" : "2x"
     },
     {
-      "idiom" : "universal",
+      "filename" : "FunFacts 1.jpg",
+      "idiom" : "iphone",
       "scale" : "3x"
     }
   ],
